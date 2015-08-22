@@ -1,0 +1,85 @@
+/*
+    HOMEPAGE.CSS
+
+    - Last updated: 21.08.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Legal Services Listing
+//-----------------------------------------------------------------
+
+.legal-services {
+	position: relative;
+	margin-bottom: rem-calc(65);
+
+	ul {
+		background: rgba($primary-color, 0.9);
+		margin: 0;
+		list-style: none;
+		font-size: rem-calc(21);
+
+		@media #{$xlarge-up} {
+		    font-size: rem-calc(31);
+		}
+
+		li {
+			border-bottom: 1px solid #56AAD5;
+
+			&:last-child {
+				border-bottom: 0;
+			}
+
+			a {
+				font-family: $font-family-serif;
+				display: block;
+				color: white;
+				font-weight: normal;
+				padding: rem-calc(10 20);
+
+				@media #{$medium-up} {
+				    padding: rem-calc(10 30);
+				}
+
+				&:hover {
+					color: darken($primary-color, 10%);
+				}
+			}
+		}
+	}
+
+	.read-more-button {
+		display: block;
+		color: white;
+		font-size: rem-calc(12);
+		text-transform: uppercase;
+
+		@media #{$small-only} {
+		    background: rgba($primary-color, 0.9);
+		    padding: rem-calc(10 20 15 10);
+		    text-align: right;
+		    font-size: rem-calc(9);
+		}
+
+		@media #{$medium-up} {
+		    position: absolute;
+		    bottom: rem-calc(10);
+		    right: rem-calc(30);
+		}
+
+		&:hover {
+			color: darken($primary-color, 20%);
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+
+
+
+
+

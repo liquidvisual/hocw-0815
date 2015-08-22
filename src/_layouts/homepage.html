@@ -1,0 +1,104 @@
+---
+layout: master
+---
+
+<div class="hero-large">
+
+	<div class="hero-medium">
+
+		<div class="hero-small">
+
+			<!-- HEADER -->
+			<header class="global-header">
+			    {% include header.html %}
+			</header>
+
+			<!-- Intro Text -->
+			<div class="row outer-row">
+				<div class="large-7 columns">
+					<p class="lead">Introductory text, eg. our lawyers in Melbourne and Mount Waverley provide high quality legal services to clients including corporate, small business and private. Please select one of the following practice areas to find out how we can help you with your legal issue...</p>
+				</div>
+			</div>
+		</div> <!-- .hero-small -->
+
+		<!-- Legal Services -->
+		<div class="row outer-row collapse-for-small">
+			<div class="large-7 columns">
+				<div class="legal-services">
+					<ul>
+						<li><a href="#">Business Law <i class="fa fa-angle-right"></i></a></li>
+						<li><a href="#">Commercial Litigation &amp; Dispute Resolution <i class="fa fa-angle-right"></i></a></li>
+						<li><a href="#">Family Law <i class="fa fa-angle-right"></i></a></li>
+						<li><a href="#">Wills &amp; Estates <i class="fa fa-angle-right"></i></a></li>
+						<li><a href="#">Property &amp; Conveyancing <i class="fa fa-angle-right"></i></a></li>
+						<li><a href="#">Notary <i class="fa fa-angle-right"></i></a></li>
+					</ul>
+					<a class="read-more-button" href="#">View our Full List of Legal Services &nbsp;<i class="fa fa-angle-right"></i></a>
+				</div>
+			</div>
+			<div class="large-5 columns show-for-xlarge-up">
+
+				<!-- News Updates -->
+				<div class="media-tile media-tile-news">
+					<h3>Latest blog &amp; news updates</h3>
+					{% for item in site.data.articles limit: 3 %}
+						<article class="media-article">
+							<a href="{{ item.url }}">
+								<div class="media-body">
+									<date class="media-tagline">{{ item.date | date: "%d %B %Y" }}</date>
+
+									<!-- SERVER-SIDE TRUNCATION IS VERY IMPORTANT HERE (60 max) -->
+									<p>{{ item.body | strip_html | truncate: 60 }} &nbsp;
+
+									<span class="media-link"><i class="fa fa-angle-right"></i></span></p>
+								</div>
+							</a>
+						</article>
+					{% endfor %}
+					<a class="media-tile-link text-right" href="#">More <i class="fa fa-angle-right"></i></a>
+				</div>
+
+				<!-- Search Box -->
+				<form class="media-tile search-form show-for-large-up">
+					<input type="text" placeholder="Search">
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!-- CTU Section -->
+<section class="section cta-section">
+	<div class="row outer-row">
+		<div class="medium-6 large-7 columns">
+
+			<div class="media">
+				<div class="media-left show-for-xlarge-up-table-cell">
+					<div class="media-object">
+						<!-- FIX THIS REMEMBER TO -->
+						<img style="padding-right: 10px;" src="/img/template/speech-bubble.svg" alt="Get in Touch">
+					</div>
+				</div>
+				<div class="media-body">
+					<h2>Get in Touch</h2>
+					<p>Contact us today to discuss your legal matter, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient. Email us at <a href="#">enquiries@hocw.com.au ></a></p>
+				</div>
+			</div>
+
+		</div>
+		<div class="medium-6 large-5 columns">
+
+			<div class="row">
+				<div class="small-6 columns">
+					<a class="tile-button" href="#">Melbourne</a>
+				</div>
+				<div class="small-6 columns">
+					<a class="tile-button" href="#">Mount Waverly</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>

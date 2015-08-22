@@ -1,0 +1,74 @@
+/*
+    MEDIA-TILE.CSS
+
+    - Last updated: 04.05.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Media Tile
+//-----------------------------------------------------------------
+
+.media-tile {
+	background: lighten($primary-color, 10%);
+	padding: rem-calc(20 30 15 30);
+	margin-bottom: rem-calc(20);
+	color: white;
+
+	.media-tile-link {
+		display: block;
+		text-transform: uppercase;
+		color: white;
+	}
+
+	.media-tile-body {
+		margin-bottom: rem-calc(5);
+	}
+
+	h2, h3, h4, h5, h6 {
+		color: white;
+	}
+}
+
+//-----------------------------------------------------------------
+// Media Tile News - used in hero on homepage
+//-----------------------------------------------------------------
+
+.media-tile-news {
+	background: rgba(#2FB3FB, 0.9);
+	overflow: hidden;
+
+	@media #{$medium-up} {
+	    max-height: rem-calc(274);
+
+	}
+
+	.media-article {
+		date {
+			color: #93CCE8;
+			font-size: rem-calc(12);
+			text-transform: uppercase;
+			padding-bottom: 0;
+		}
+
+		.media-link {
+			color: white;
+		}
+
+		p {
+			color: white;
+		}
+	}
+}
+
+//=========================================
+// Context
+//=========================================
+
+.global-footer .media-tile {
+	@media #{$small-only} {
+	    margin-bottom: rem-calc(40);
+	}
+}

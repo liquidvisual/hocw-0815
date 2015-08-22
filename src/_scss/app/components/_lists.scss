@@ -1,0 +1,52 @@
+/*
+    LISTS.CSS
+
+    - Last updated: 09.07.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+
+ul li {
+	// margin-bottom: rem-calc(5);
+}
+
+//-----------------------------------------------------------------
+// Triangle List
+//-----------------------------------------------------------------
+
+.check-list {
+	list-style: none;
+	margin-left: 0;
+
+	li {
+		position: relative;
+		padding-left: rem-calc(30);
+
+		&:before {
+			position: absolute;
+			top: -2px;
+			left: 0;
+			content: "\f046";
+			font-family: "FontAwesome";
+			font-size: rem-calc(20);
+			color: $secondary-color;
+		}
+	}
+
+	// &[class*='block-grid'] li {
+	// 	padding-bottom: rem-calc(15); // Let list items set their own inner padding
+	// }
+}
+
+//=========================================
+// Foundation List Override
+//=========================================
+
+ol ol ul, ol ul ul, ul ol ul, ul ul ul {
+    list-style: circle;
+}

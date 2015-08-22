@@ -1,0 +1,40 @@
+# A Typical Sitemap structure
+
+- title: Home
+  url: /
+
+- title: About
+  url: /about/
+
+- title: Our People
+  url: /our-people/
+  include_children_in_nav: true
+  children:
+    - title: John Smith
+      url: /our-people/john-smith/
+    - title: John Smith
+      url: /our-people/john-smith/
+    - title: John Smith
+      url: /our-people/john-smith/
+    - title: John Smith
+      url: /our-people/john-smith/
+
+- title: Legal Services
+  url: /legal-services/
+  show_children_in_nav: false
+  children:
+    - title: Family Law
+      url: /legal-services/family-law/
+
+- title: Blog/News
+  url: /news/
+  show_children_in_nav: false
+  children:
+    - title: Article Heading
+      url: /news/news-item/
+
+- title: Resources
+  url: /resources/
+
+- title: Contact
+  url: /contact/

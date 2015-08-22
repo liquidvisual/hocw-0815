@@ -1,0 +1,34 @@
+# GLOBAL SITE SETTINGS
+
+# General
+seo_title:
+title:
+short_title: hocw
+company:
+description: ""
+cname: hocw.yourwebvisual.com
+
+author_site: http://www.muchmedia.com.au
+
+# Contact Info
+email: test@email.com
+
+# Social Networks
+facebook:
+linked_in:
+google_plus:
+
+# Google Map
+google_map: ""
+
+# Google Analytics
+google_analytics: ""
+
+# Breakpoints
+breakpoints:
+  small  : 640
+  medium : 768
+  large  : 1024
+  xlarge : 1170
+  #previously: 1250
+  xxlarge: 1400

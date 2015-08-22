@@ -1,0 +1,78 @@
+/*
+    FORMS.CSS
+
+    - Last updated: 03.08.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Forms
+//-----------------------------------------------------------------
+
+.search-form {
+	input {
+		background: none;
+		border: 0;
+		border-bottom: 2px solid #73BBE3;
+		background: url(../img/template/magnifying-glass.svg) no-repeat right;
+		background-size: 25px;
+		margin-bottom: 10px;
+		font-size: $h4-font-size;
+		color: white;
+
+		&:focus {
+			background: url(../img/template/magnifying-glass.svg) no-repeat right;
+			background-size: 25px;
+			border-bottom: 2px solid #73BBE3;
+		}
+	}
+
+
+}
+
+::-webkit-input-placeholder { color: white; opacity: 1; }
+:-moz-placeholder { color: white; opacity: 1; }
+::-moz-placeholder { color: white; opacity: 1; }
+:-ms-input-placeholder { color: white; opacity: 1; }
+input:-moz-placeholder{color: white; opacity: 1;}
+input:-ms-input-placeholder{color: white; opacity: 1; }
+
+// select {
+//     display: inline-block;
+//     padding: 0;
+//     border: 0;
+//     margin: 0;
+//     background: none;
+//     height: 100%;
+//     outline: none;
+//     cursor: pointer;
+//     -webkit-appearance: none;
+//     -moz-appearance: none;
+//     appearance: none;
+//     padding-right: 12px;
+// }
+
+// Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding.
+// @media screen and (-webkit-min-device-pixel-ratio:0) {
+//     // select {padding-right:18px}
+// }
+
+// label {
+//     position: relative;
+// }
+
+// label:before {
+//     content: '\f0d7';
+//     font-family: 'FontAwesome';
+//     position: absolute;
+//     top: 1px;
+//     right: 0;
+//     pointer-events: none;
+// }
+
+
+//=========================================
+//
+//=========================================

@@ -1,0 +1,33 @@
+/*
+    TYPE.CSS
+
+    - Last updated: 04.05.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Type
+//-----------------------------------------------------------------
+
+a,
+.anchor {
+	@include transition("color, background");
+	cursor: pointer;
+}
+
+p.lead {
+	font-size: rem-calc(15);
+}
+
+// .h1 { font-size: $h1-font-size; }
+// .h2 { font-size: $h2-font-size; }
+// .h3 { font-size: $h3-font-size; }
+// .h4 { font-size: $h4-font-size; }
+// .h5 { font-size: $h5-font-size; }
+// .h6 { font-size: $h6-font-size; }
+
+//=========================================
+//
+//=========================================

@@ -1,0 +1,78 @@
+/*
+    HEADER.CSS
+
+    - Last updated: 06.07.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+
+
+
+//-----------------------------------------------------------------
+// Header
+//-----------------------------------------------------------------
+
+.global-header {
+	// position: absolute;
+	// top: 0;
+	// width: 100%;
+	margin-bottom: rem-calc(80);
+}
+
+//-----------------------------------------------------------------
+// Logo
+//-----------------------------------------------------------------
+
+.global-header-logo {
+
+
+	img {
+		width: rem-calc(100);
+
+		@media #{$medium-up} {
+		    width: rem-calc(134);
+		}
+
+		@media #{$xlarge-up} {
+		    width: rem-calc(213);
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+
+//=========================================
+// Mobile Menu
+//=========================================
+
+.global-header-mobile-menu {
+	position: absolute;
+	// top: calc(50% - 2px);
+	// top: 50%;
+	top: 0;
+	right: 0;
+	// padding: rem-calc(8 10 12 10);
+	padding: rem-calc(0 10 0 0);
+	border-radius: $global-radius;
+	// border: 1px solid #eee;
+
+	// -webkit-transform: translateY(-50%);
+	//     -ms-transform: translateY(-50%);
+	//         transform: translateY(-50%);
+}
+
+//=========================================
+// Hamburger
+//=========================================
+
+.hamburger {
+	@include hamburger($width: 30px, $gap: 6px, $thickness: 5px, $color: #222);
+
+	@media #{$medium-up} {
+		@include hamburger($width: 28px, $gap: 6px, $thickness: 5px, $color: #222);
+	}
+}
