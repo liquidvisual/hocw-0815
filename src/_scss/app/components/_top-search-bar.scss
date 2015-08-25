@@ -7,41 +7,112 @@
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
+
+.top-search-bar-is-open {
+	.lv-page {
+		padding-top: 65px;
+	}
+
+	.top-search-bar {
+		bottom: auto;
+		top: 0;
+	}
+}
+
 //-----------------------------------------------------------------
-//
+// Top Search Bar
 //-----------------------------------------------------------------
 
 .top-search-bar {
 	position: absolute;
-	top: 0;
+	bottom: 100%;
 	width: 100%;
-	height: rem-calc(50);
-	color: rgba(white, 0.7);
-	overflow: hidden;
-	background: rgba(black, 0.5);
+	color: white;
+	z-index: 2000;
 
-	ul {
-		display: block;
-		float: right;
-		line-height: rem-calc(50);
+	@media #{$medium-up} {
+		top: 0;
+		bottom: auto;
+	    background: rgba(black, 0.5);
+	}
 
-		li {
-			margin-left: rem-calc(20);
+	//=========================================
+	// Rows
+	//=========================================
+
+	.outer-row,
+	.columns {
+		@media #{$small-only} {
+		    padding: 0;
 		}
 	}
 
-	a {
-		color: rgba(white, 0.7);
+	//=========================================
+	// UL LI
+	//=========================================
+
+	ul {
+		position: relative;
+		list-style: none;
+		margin: 0;
+
+		@media #{$medium-up} {
+		    text-align: right;
+		}
+
+		@media #{$small-only} {
+		    background: $secondary-color;
+		    padding: rem-calc(15 0);
+		}
+
+		li {
+			display: inline-block;
+			line-height: rem-calc(20);
+
+			@media #{$medium-up} {
+			    margin-left: rem-calc(30);
+			    line-height: rem-calc(50);
+			}
+
+			@media #{$small-only} {
+				display: block;
+			    padding: rem-calc(0 20);
+			}
+
+			a {
+				color: white;
+
+				&:hover {
+					color: #ddd;
+				}
+			}
+		}
+
+		li:first-child {
+			margin-left: 0; // search field
+		}
 	}
 
-	i {
-		// font-size: rem-calc(18);
-	}
+	//=========================================
+	// Button
+	//=========================================
 
-	.top-search-bar-phone {
-		float: left;
+	.top-search-bar-button {
+
+		@media #{$small-only} {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			line-height: rem-calc(40);
+		    background: rgba(black, 0.5);
+		}
 	}
 }
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
 
 //=========================================
 //

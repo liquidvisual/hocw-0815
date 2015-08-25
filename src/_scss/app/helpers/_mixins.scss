@@ -10,17 +10,17 @@
 //-----------------------------------------------------------------
 
 @mixin transition($property: "opacity, color, background") {
-    -webkit-transition: all .36s ease;
-       -moz-transition: all .36s ease;
-         -o-transition: all .36s ease;
-        -ms-transition: all .36s ease;
-            transition: all .36s ease;
+    // -webkit-transition: all .36s ease;
+    //    -moz-transition: all .36s ease;
+    //      -o-transition: all .36s ease;
+    //     -ms-transition: all .36s ease;
+    //         transition: all .36s ease;
 
-    -webkit-transition-property: $property;
-       -moz-transition-property: $property;
-         -o-transition-property: $property;
-        -ms-transition-property: $property;
-            transition-property: $property;
+    // -webkit-transition-property: $property;
+    //    -moz-transition-property: $property;
+    //      -o-transition-property: $property;
+    //     -ms-transition-property: $property;
+    //         transition-property: $property;
 }
 
 //=========================================

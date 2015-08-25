@@ -2,11 +2,13 @@
 layout: master
 ---
 
-<div class="hero">
+<div class="hero-internal">
 
-    <!-- HEADER -->
-    <header class="global-header">
-        {% include header.html %}
-    </header>
+	<!-- HEADER -->
+	<header data-global-header class="global-header">
+	    {% include header.html %}
+	</header>
 
 </div>
+
+{{ content }}

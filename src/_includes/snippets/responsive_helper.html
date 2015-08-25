@@ -40,6 +40,12 @@
 	            if (screenWidth > large && screenWidth <= xlarge) device = "xLarge";
 	            if (screenWidth > xlarge) device = "xxLarge";
 
+	            // if (screenWidth <= small) device = "Small";
+	            // if (screenWidth > small && screenWidth <= medium) device = "Medium";
+	            // if (screenWidth > medium && screenWidth <= large) device = "Large";
+	            // if (screenWidth > large && screenWidth <= xlarge) device = "xLarge";
+	            // if (screenWidth > xlarge) device = "xxLarge";
+
 	            $('.lv-screen-data').html(screenWidth+" x "+screenHeight+"<br>"+device)
 	                .css({
 	                    'position': 'fixed',

@@ -14,8 +14,10 @@
 .global-footer-body {
 	background: $primary-color;
 
-	@media #{$small-only} {
-	    padding-bottom: rem-calc(30); // special case, override section
+	padding-bottom: rem-calc(30); // special case, override section
+
+	@media #{$medium-up} {
+	    padding-bottom: rem-calc(50); // special case, override section
 	}
 }
 
@@ -90,7 +92,7 @@
 		margin: 0;
 
 		@media #{$medium-up} {
-		    margin-top: -14px;
+		    margin-top: -34px;
 		}
 
 		li {

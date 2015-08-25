@@ -22,6 +22,21 @@ $(window).load(function() {
 // }
 
 //-----------------------------------------------------------------
+// Top Search Bar - trigger dropdown
+//-----------------------------------------------------------------
+
+$('[data-top-search-bar-button]').click(function(){
+
+    if ($('body').hasClass('top-search-bar-is-open')) {
+        $('body').removeClass('top-search-bar-is-open');
+
+    } else {
+        $('body').addClass('top-search-bar-is-open');
+
+    }
+});
+
+//-----------------------------------------------------------------
 // Magnific Popup
 //-----------------------------------------------------------------
 

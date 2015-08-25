@@ -13,7 +13,14 @@
 
 .legal-services {
 	position: relative;
-	margin-bottom: rem-calc(65);
+
+	@media #{$medium-up} {
+	    margin-bottom: rem-calc(40);
+	}
+
+	@media #{$large-up} {
+	    margin-bottom: rem-calc(65);
+	}
 
 	ul {
 		background: rgba($primary-color, 0.9);
@@ -56,14 +63,14 @@
 		font-size: rem-calc(12);
 		text-transform: uppercase;
 
-		@media #{$small-only} {
+		@media #{$small-only}, #{$medium-only}, #{$large-only} {
 		    background: rgba($primary-color, 0.9);
 		    padding: rem-calc(10 20 15 10);
 		    text-align: right;
-		    font-size: rem-calc(9);
+		    font-size: rem-calc(10);
 		}
 
-		@media #{$medium-up} {
+		@media #{$xlarge-up} {
 		    position: absolute;
 		    bottom: rem-calc(10);
 		    right: rem-calc(30);

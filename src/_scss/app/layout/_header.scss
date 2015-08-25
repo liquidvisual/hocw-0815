@@ -15,10 +15,48 @@
 //-----------------------------------------------------------------
 
 .global-header {
+
 	// position: absolute;
 	// top: 0;
 	// width: 100%;
-	margin-bottom: rem-calc(80);
+	margin-bottom: rem-calc(40);
+	z-index: 10;
+
+	@media #{$medium-up} {
+	    margin-bottom: rem-calc(75);
+	}
+}
+
+//-----------------------------------------------------------------
+// Is Fixed
+//-----------------------------------------------------------------
+
+.global-header-fixed {
+	display: none;
+}
+
+.header-is-fixed .global-header-fixed {
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: white;
+	padding: rem-calc(20 0);
+	box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
+	z-index: 1000;
+
+	@media #{$xlarge-up} {
+	    padding: rem-calc(25 0);
+	}
+
+	.global-header-logo img {
+		width: rem-calc(60);
+
+		@media #{$xlarge-up} {
+		    width: rem-calc(87);
+		}
+	}
 }
 
 //-----------------------------------------------------------------
@@ -26,7 +64,8 @@
 //-----------------------------------------------------------------
 
 .global-header-logo {
-
+	position: relative;
+	z-index: 1000;
 
 	img {
 		width: rem-calc(100);
@@ -70,9 +109,9 @@
 //=========================================
 
 .hamburger {
-	@include hamburger($width: 30px, $gap: 6px, $thickness: 5px, $color: #222);
+	@include hamburger($width: 28px, $gap: 6px, $thickness: 5px, $color: #383E44);
 
 	@media #{$medium-up} {
-		@include hamburger($width: 28px, $gap: 6px, $thickness: 5px, $color: #222);
+		@include hamburger($width: 28px, $gap: 6px, $thickness: 5px, $color: #383E44);
 	}
 }

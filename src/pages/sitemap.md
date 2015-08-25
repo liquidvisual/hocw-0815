@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: internal/text_page
 title: Sitemap
 permalink: /sitemap/
 ---

@@ -19,6 +19,7 @@
 {% assign sitemap = site.data.sitemap %}
 {% assign url_paths = page.url | downcase | split: '/' %}
 
+
 <ul>
 	{% comment %} Important: leave 'Home' out of the loop {% endcomment %}
 	<li class="{% if page.url == "/" %} active {% endif %}"><a href="/">Home</a></li>
@@ -56,9 +57,13 @@
 		{% endif %}
 	</li>
 	{% endfor %}
-	<!-- <li class="mm-nolist">
+	<li class="mm-nolist hide-for-xlarge-up">
+		<span class="social-media">
+			<a href="{{ settings.linked_in }}"><i class="fa fa-linkedin"></i></a>
+			<a href="{{ settings.linked_in }}"><i class="fa fa-youtube"></i></a>
+		</span>
 		<form class="search-form">
 		    <input type="text" placeholder="Search">
 		</form>
-	</li> -->
+	</li>
 </ul>

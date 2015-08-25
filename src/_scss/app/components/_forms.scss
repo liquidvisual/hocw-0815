@@ -29,15 +29,46 @@
 		}
 	}
 
-
+	::-webkit-input-placeholder { color: white; opacity: 1; }
+	:-moz-placeholder { color: white; opacity: 1; }
+	::-moz-placeholder { color: white; opacity: 1; }
+	:-ms-input-placeholder { color: white; opacity: 1; }
+	input:-moz-placeholder{color: white; opacity: 1;}
+	input:-ms-input-placeholder{color: white; opacity: 1; }
 }
 
-::-webkit-input-placeholder { color: white; opacity: 1; }
-:-moz-placeholder { color: white; opacity: 1; }
-::-moz-placeholder { color: white; opacity: 1; }
-:-ms-input-placeholder { color: white; opacity: 1; }
-input:-moz-placeholder{color: white; opacity: 1;}
-input:-ms-input-placeholder{color: white; opacity: 1; }
+//-----------------------------------------------------------------
+//  Contexts
+//-----------------------------------------------------------------
+
+.off-canvas-menu .search-form {
+	margin: rem-calc(0 20);
+
+	input {
+		border-bottom: 3px solid #7E7C7E;
+		font-size: rem-calc(16);
+		background: url(../img/template/magnifying-glass.svg) no-repeat left;
+		background-size: 15px;
+		padding-left: rem-calc(22);
+		opacity: 0.6;
+	}
+}
+
+.top-search-bar .search-form {
+	input {
+		height: rem-calc(50); // size of bar at medium
+		margin: 0;
+		border: 0;
+		font-size: inherit;
+		background: url(../img/template/magnifying-glass.svg) no-repeat left;
+		background-size: 15px;
+		padding-left: rem-calc(22);
+	}
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
 
 // select {
 //     display: inline-block;

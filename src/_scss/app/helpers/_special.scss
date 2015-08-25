@@ -18,3 +18,9 @@
 	    display: table-cell !important;
 	}
 }
+
+.right-for-medium-up {
+	@media #{$medium-up} {
+		float: right !important;
+	}
+}

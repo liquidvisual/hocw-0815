@@ -13,7 +13,7 @@
 
 // $mm_btnSize		: 43px;
 // $mm_padding		: 10px;
-$mm_fontSize	: 15px; //14px;
+$mm_fontSize	: 16px; //14px;
 
 // $mm_subpanelOffset	: 30%;
 // $mm_subopenWidth	: $mm_btnSize;
@@ -41,8 +41,8 @@ $mm_fontSize	: 15px; //14px;
 
 // Colors
 $mm_pageShadow					: none; //0 0 20px rgba( 0, 0, 0, 0.2 );
-$mm_borderColor					: rgba( 0, 0, 0, 0.15 );
-$mm_backgroundColor				: $primary-color; //darken($secondary-color, 20%);
+$mm_borderColor					: #4E5357;
+$mm_backgroundColor				: #3F444A; //darken($secondary-color, 20%);
 // $mm_emphasizedBackgroundColor	: rgba( 0, 0, 0, 0.1 );
 // $mm_highlightedBackgroundColor	: rgba( 255, 255, 255, 0.05 );
 $mm_textColor					: white; //darken(#FFF, 15%); //rgba( 255, 255, 255, 0.6 );
@@ -50,3 +50,18 @@ $mm_dimmedTextColor				: rgba(white, 0.8); //rgba( 255, 255, 255, 0.3 );
 
 // Addon colors
 // $mm_toggleCheckedColor	: #4bd963;
+
+.mm-nolist:after {
+	border-bottom: 0 !important;
+}
+
+.mm-list a.mm-subopen::before {
+	display: none !important;
+}
+
+.mm-list a.mm-subopen::after,
+.mm-list a.mm-subclose::before {
+	width: 10px !important;
+	height: 10px !important;
+	border-color: white !important;
+}

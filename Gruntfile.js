@@ -135,12 +135,12 @@ module.exports = function (grunt) {
           ]
         }]
       },
-      utility: {
-        files: [{
-          dot: true,
-          src: ['<%= yeoman.dist %>/utility.scss']
-        }]
-      },
+      // utility: {
+      //   files: [{
+      //     dot: true,
+      //     src: ['<%= yeoman.dist %>/utility.scss']
+      //   }]
+      // },
       server: [
         '.tmp',
         '.jekyll'

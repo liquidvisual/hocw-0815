@@ -21,6 +21,11 @@
 		display: block;
 		text-transform: uppercase;
 		color: white;
+		font-size: rem-calc(10);
+
+		@media #{$medium-up} {
+		    font-size: rem-calc(12);
+		}
 	}
 
 	.media-tile-body {
@@ -40,9 +45,22 @@
 	background: rgba(#2FB3FB, 0.9);
 	overflow: hidden;
 
+	@media #{$small-only} {
+	    padding: rem-calc(25 20);
+	}
+
 	@media #{$medium-up} {
 	    max-height: rem-calc(274);
+	}
 
+	@media #{$medium-only} {
+	   margin-bottom: 0;
+	}
+
+	li {
+		@media #{$small-only} {
+		    padding-bottom: 0;
+		}
 	}
 
 	.media-article {

@@ -1,0 +1,23 @@
+<div class="media-tile media-tile-news">
+	<h3>Latest blog &amp; news updates</h3>
+
+	<ul class="medium-block-grid-3 large-block-grid-1">
+		{% for item in site.data.articles limit: 3 %}
+			<li>
+				<article class="media-article">
+					<a href="{{ item.url }}">
+						<div class="media-body">
+							<date class="media-tagline">{{ item.date | date: "%d %B %Y" }}</date>
+
+							<!-- SERVER-SIDE TRUNCATION IS VERY IMPORTANT HERE (60 max) -->
+							<p>{{ item.body | strip_html | truncate: 60 }} &nbsp;
+
+							<span class="media-link"><i class="fa fa-angle-right"></i></span></p>
+						</div>
+					</a>
+				</article>
+			</li>
+		{% endfor %}
+	</ul>
+	<a class="media-tile-link text-right" href="#">More <i class="fa fa-angle-right"></i></a>
+</div>

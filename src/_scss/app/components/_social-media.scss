@@ -19,6 +19,7 @@
 	}
 
 	a {
+		display: block;
 		background: #41484E;
 		font-size: rem-calc(25);
 		color: white;
@@ -51,7 +52,19 @@
 	}
 
 	@media #{$xlarge-up} {
-	    left: -135px;
+	    left: -140px;
+	}
+}
+
+// Off Canvas
+.off-canvas-menu .social-media {
+	a {
+		width: rem-calc(39);
+		height: rem-calc(39);
+		line-height: rem-calc(39);
+		display: inline-block;
+		background: #555C62;
+		margin: rem-calc(15 0 10 0);
 	}
 }
 

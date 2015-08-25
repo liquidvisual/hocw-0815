@@ -30,28 +30,32 @@
     <div class="lv-super dev-mode-enabled">
         <div class="lv-page">
 
+            <!-- MOBILE HEADER (DUPLICATE FOR MMENU) -->
+            <header class="global-header-fixed FixedTop" aria-hidden="true">
+                {% include header.html %}
+            </header>
+
+            <!-- SEARCH BAR -->
             <div class="top-search-bar">
                 <div class="row outer-row">
                     <div class="columns">
-                        <ul class="lv-inline-list close-gaps">
-                            <li class="top-search-bar-phone"><a href="#"><i class="fa fa-phone"></i> Call us today</a></li>
-                            <li><b>Melbourne</b> <a href="#">03 5555 5555</a></li>
-                            <li><b>Mount Waverley</b> <a href="#">03 5555 5555</a></li>
+                        <ul>
+                            <!-- Homepage conditional -->
+                            {% if page.url == "/" %}
+                                <li class="left show-for-xlarge-up">
+                                    <form class="search-form">
+                                        <input type="text" placeholder="Search">
+                                    </form>
+                                </li>
+                            {% endif %}
+
+                            <li class="top-search-bar-button"><a data-top-search-bar-button href="#"><i class="fa fa-phone"></i>&nbsp; Call us today</a></li>
+                            <li><b>Melbourne</b> <a href="#">03 9629 7411</a></li>
+                            <li><b>Mount Waverley</b> <a href="#">03 9550 4600</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-
-            <!-- NAVIGATION -->
-            <nav class="global-navigation show-for-xlarge-up">
-                <div class="row outer-row">
-                    <div class="columns">
-                        <div class="topbar">
-                            {% include navigation.html %}
-                        </div>
-                    </div>
-                </div>
-            </nav>
 
             {{ content }}
 
@@ -69,20 +73,23 @@
     </nav>
 
     <!-- **** JAVASCRIPT **** -->
-    <!-- // <script src="/_bower_components/jquery/dist/jquery.min.js"></script> -->
 
     <!-- build:js(src) /assets/scripts/minified.js -->
     <script src="/_bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/_bower_components/jquery-placeholder/jquery.placeholder.js"></script>
     <script src="/_bower_components/jQuery.mmenu/src/js/jquery.mmenu.min.all.js"></script>
     <script src="/_bower_components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="/_bower_components/nprogress/nprogress.js"></script>
     <script src="/_bower_components/fastclick/lib/fastclick.js"></script>
     <script src="/_bower_components/foundation/js/foundation/foundation.js"></script>
     <script src="/_bower_components/foundation/js/foundation/foundation.abide.js"></script>
     <script src="/scripts/main.js"></script>
+    <script src="/scripts/scrolling.js"></script>
     <!-- endbuild -->
 
-    {% include snippets/responsive_helper.html %}
+    {% if site.mode != 'build' %}
+        {% include snippets/responsive_helper.html %}
+    {% endif %}
 
     {% comment %}
     <!--
@@ -118,11 +125,9 @@
 
     <script>
         $(document).foundation();
-        hljs.initHighlightingOnLoad();
     </script>
 
     <!-- Google Analytics -->
-    {% include snippets/google_analytics.html %}
 
     <!-- No Javascript Warning -->
     <noscript>
