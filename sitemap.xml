@@ -5,154 +5,91 @@
   
   <url>
     <loc>/news/thats-pie-country-they-do-a-lot-of-baking-up-there/</loc>
-    <lastmod>2015-08-27T20:23:00+10:00</lastmod>
+    <lastmod>2015-08-28T15:49:53+10:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/news/whats-the-deal-with-airline-peanuts/</loc>
-    <lastmod>2015-08-27T20:23:00+10:00</lastmod>
+    <lastmod>2015-08-28T15:49:53+10:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/news/nothings-finer-than-being-in-your-diner/</loc>
-    <lastmod>2015-08-27T20:23:00+10:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>/builder-app/views/404.html</loc>
-    <lastmod>2015-08-27T20:23:00+10:00</lastmod>
+    <lastmod>2015-08-28T15:49:53+10:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/about/</loc>
-    <lastmod>2015-08-27T20:23:00+10:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>/manage/</loc>
-    <lastmod>2015-08-27T20:23:00+10:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>/builder-app/views/design/component-library.html</loc>
-    <lastmod>2015-08-27T20:23:00+10:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>/builder-app/docs/component-library.html</loc>
-    <lastmod>2015-08-27T20:23:00+10:00</lastmod>
+    <lastmod>2015-08-28T15:49:53+10:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/contact/</loc>
-    <lastmod>2015-08-27T20:23:00+10:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>/builder-app/includes/context_menu.html</loc>
-    <lastmod>2015-08-27T20:23:00+10:00</lastmod>
+    <lastmod>2015-08-28T15:49:53+10:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/legal-services/family-law/</loc>
-    <lastmod>2015-08-27T20:23:00+10:00</lastmod>
+    <lastmod>2015-08-28T15:49:53+10:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/news/</loc>
-    <lastmod>2015-08-27T20:23:00+10:00</lastmod>
+    <lastmod>2015-08-28T15:49:53+10:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2015-08-27T20:23:00+10:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <url>
     <loc>/legal-services/</loc>
-    <lastmod>2015-08-27T20:23:00+10:00</lastmod>
+    <lastmod>2015-08-28T15:49:53+10:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/our-people/</loc>
-    <lastmod>2015-08-27T20:23:00+10:00</lastmod>
+    <lastmod>2015-08-28T15:49:53+10:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2015-08-28T15:49:53+10:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   
   <url>
     <loc>/our-people/our-people-item/</loc>
-    <lastmod>2015-08-27T20:23:00+10:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>/builder-app/views/login.html</loc>
-    <lastmod>2015-08-27T20:23:00+10:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>/builder-app/views/preview/preview.html</loc>
-    <lastmod>2015-08-27T20:23:00+10:00</lastmod>
+    <lastmod>2015-08-28T15:49:53+10:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/resources/</loc>
-    <lastmod>2015-08-27T20:23:00+10:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>/builder-app/views/content/settings.html</loc>
-    <lastmod>2015-08-27T20:23:00+10:00</lastmod>
+    <lastmod>2015-08-28T15:49:53+10:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/sitemap/</loc>
-    <lastmod>2015-08-27T20:23:00+10:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>/builder-app/includes/topbar.html</loc>
-    <lastmod>2015-08-27T20:23:00+10:00</lastmod>
+    <lastmod>2015-08-28T15:49:53+10:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
