@@ -234,8 +234,8 @@
             <!-- HERO -->
 <div class="hero-internal">
 
-	<!-- HEADER -->
-	<header data-global-header class="global-header">
+	<!-- GLOBAL HEADER -->
+	<header class="global-header" data-global-header>
 	    
 
 <div class="row outer-row">
@@ -416,10 +416,10 @@
 </nav>
 	</header>
 
-</div>
+</div> <!-- .hero-internal -->
 
 <!-- BREADCRUMBS -->
-<nav class="breadcrumbs-bar">
+<!-- <nav class="breadcrumbs-bar">
     <div class="row outer-row">
         <div class="columns">
             
@@ -436,10 +436,24 @@
 </ul>
         </div>
     </div>
-</nav>
+</nav> -->
 
 <!-- STAGE -->
 <div class="stage section">
+
+	<!-- HEADER -->
+	<header class="header">
+		<div class="row outer-row">
+			<div class="columns">
+				<h1>
+					
+				 		Component Library
+					
+				</h1>
+			</div>
+		</div>
+	</header>
+
 	<style>
 	.example-heading {
 		color: #222;
@@ -479,7 +493,9 @@
 	</div>
 	<div class="medium-9 end columns">
 
-		<h1>Component Library</h1>
+		<!-- ***********************************************************
+
+		**************************************************************** -->
 
 		<h3 class="example-heading">Media Articles</h3>
 		<div class="example">
@@ -560,18 +576,27 @@
 			<ul class="no-bullet">
 	
 	<li>
-		<date>02 SEPTEMBER 2014</date>
-		<p><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab...</a></p>
+		<div class="feed-item">
+			<date>02 September 2014</date>
+			<!-- TRUNCATE: 100 Chars Max -->
+			<p><a href="/news/news-item/">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <i class="fa fa-angle-right"></i></a></p>
+		</div>
 	</li>
 	
 	<li>
-		<date>04 OCTOBER 2014</date>
-		<p><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab...</a></p>
+		<div class="feed-item">
+			<date>04 October 2014</date>
+			<!-- TRUNCATE: 100 Chars Max -->
+			<p><a href="/news/news-item/">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <i class="fa fa-angle-right"></i></a></p>
+		</div>
 	</li>
 	
 	<li>
-		<date>21 NOVEMBER 2014</date>
-		<p><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab...</a></p>
+		<div class="feed-item">
+			<date>21 November 2014</date>
+			<!-- TRUNCATE: 100 Chars Max -->
+			<p><a href="/news/news-item/">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <i class="fa fa-angle-right"></i></a></p>
+		</div>
 	</li>
 	
 </ul>
@@ -769,7 +794,8 @@
 	</div>
 </div>
 
-</div>
+
+</div> <!-- .stage -->
 
             <!-- FOOTER -->
             <footer class="global-footer">
@@ -834,6 +860,7 @@
     <div class="row outer-row">
         <div class="columns text-right">
         	<a class="left" href="/sitemap/">Sitemap</a>
+        	<a class="left" href="/component-library/">&nbsp;&nbsp;Components</a>
             <a class="author-logo" href="http://www.muchmedia.com.au">
                 <span class="text">Website by Much Media</span> &nbsp;
                 <img width="20" src="/assets/img/template/much-media-logo.svg" title="Much Media Freelance Web Design" alt="Much Media">
