@@ -440,24 +440,124 @@
 
 <!-- STAGE -->
 <div class="stage section">
-	<div class="row">
+	<style>
+	.example-heading {
+		color: #222;
+		margin: 40px 0;
+	}
+
+	h1 {
+		color: #2B2B2B;
+	}
+
+	.example {
+		position: relative;
+		padding: 30px;
+		background: white;
+		/*border: 0;*/
+		/*border-style: solid;*/
+		border: 1px solid #ddd;
+		/*resize: both;*/
+		/*overflow: auto;*/
+	}
+
+	body {
+		/*background: #EFF1F4;*/
+	}
+</style>
+
+<div class="row outer-row">
 	<div class="medium-4 columns">
 		<ul>
-			<li><a href="#">Kitchen Sink</a></li>
-			<li><a href="#">Aside Components</a></li>
+			<li><a href="#">All</a></li>
 			<li><a href="#">Articles</a></li>
 			<li><a href="#">Buttons</a></li>
 			<li><a href="#">Form Inputs</a></li>
-			<li><a href="#">Media Components</a></li>
-			<li><a href="#">Page Components</a></li>
+			<li><a href="#">Media</a></li>
+			<li><a href="#">Page Specific</a></li>
 		</ul>
 	</div>
 	<div class="medium-9 end columns">
 
 		<h1>Component Library</h1>
 
-		<h3>News Feed</h3>
-		<ul class="no-bullet">
+		<h3 class="example-heading">Media Articles</h3>
+		<div class="example">
+			
+				<article class="media-article">
+	<a href="/latest-news/latest-news-item/">
+		<div class="media-body">
+			<h2>That's Pie Country. They Do a Lot of Baking Up There.</h2>
+			<date class="media-tagline">Tuesday 02 Sep 2014</date>
+
+			<!-- SERVER-SIDE TRUNCATION IS VERY IMPORTANT HERE (150 max) -->
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit... &nbsp;
+
+			<span class="media-link">Read More &nbsp;<i class="fa fa-angle-right"></i></span></p>
+		</div>
+	</a>
+</article>
+			
+				<article class="media-article">
+	<a href="/latest-news/latest-news-item/">
+		<div class="media-body">
+			<h2>What's the Deal with Airline Peanuts?</h2>
+			<date class="media-tagline">Saturday 04 Oct 2014</date>
+
+			<!-- SERVER-SIDE TRUNCATION IS VERY IMPORTANT HERE (150 max) -->
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit... &nbsp;
+
+			<span class="media-link">Read More &nbsp;<i class="fa fa-angle-right"></i></span></p>
+		</div>
+	</a>
+</article>
+			
+		</div>
+
+		<h3 class="example-heading">Media Article</h3>
+		<div class="example">
+			
+				<article class="media-article">
+	<a href="/latest-news/latest-news-item/">
+		<div class="media-body">
+			<h2>That's Pie Country. They Do a Lot of Baking Up There.</h2>
+			<date class="media-tagline">Tuesday 02 Sep 2014</date>
+
+			<!-- SERVER-SIDE TRUNCATION IS VERY IMPORTANT HERE (150 max) -->
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit... &nbsp;
+
+			<span class="media-link">Read More &nbsp;<i class="fa fa-angle-right"></i></span></p>
+		</div>
+	</a>
+</article>
+			
+		</div>
+
+		<h3 class="example-heading">Breadcrumbs</h3>
+		<div class="example">
+			<nav class="breadcrumbs-bar">
+			    <div class="row outer-row">
+			        <div class="columns">
+			            
+
+
+
+<ul class="lv-breadcrumbs">
+    <li><a href="/">Home</a></li>
+    
+        
+            <li class="active">component library</li>
+        
+    
+</ul>
+			        </div>
+			    </div>
+			</nav>
+		</div>
+
+		<h3 class="example-heading">News Feed</h3>
+		<div class="example">
+			<ul class="no-bullet">
 	
 	<li>
 		<date>02 SEPTEMBER 2014</date>
@@ -475,11 +575,11 @@
 	</li>
 	
 </ul>
+		</div>
 
-		<hr />
-
-		<h3>News List</h3>
-		
+		<h3 class="example-heading">News List</h3>
+		<div class="example">
+			
 
 <div class="media-list">
 	
@@ -529,11 +629,11 @@
 		</a>
 	
 </div>
+		</div>
 
-		<hr />
-
-		<h3>News Panel</h3>
-		<div class="media-tile news-panel">
+		<h3 class="example-heading">News Panel</h3>
+		<div class="example">
+			<div class="media-tile news-panel">
 	<h3>Latest blog &amp; news updates</h3>
 
 	<ul class="medium-block-grid-3 large-block-grid-1">
@@ -586,44 +686,11 @@
 	</ul>
 	<a class="media-tile-link text-right" href="#">More <i class="fa fa-angle-right"></i></a>
 </div>
-
-		<hr />
-
-		<h3>Media Article</h3>
-		
-			<article class="media-article">
-	<a href="/latest-news/latest-news-item/">
-		<div class="media-body">
-			<h2>That's Pie Country. They Do a Lot of Baking Up There.</h2>
-			<date class="media-tagline">Tuesday 02 Sep 2014</date>
-
-			<!-- SERVER-SIDE TRUNCATION IS VERY IMPORTANT HERE (150 max) -->
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit... &nbsp;
-
-			<span class="media-link">Read More &nbsp;<i class="fa fa-angle-right"></i></span></p>
 		</div>
-	</a>
-</article>
-		
-			<article class="media-article">
-	<a href="/latest-news/latest-news-item/">
-		<div class="media-body">
-			<h2>What's the Deal with Airline Peanuts?</h2>
-			<date class="media-tagline">Saturday 04 Oct 2014</date>
 
-			<!-- SERVER-SIDE TRUNCATION IS VERY IMPORTANT HERE (150 max) -->
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit... &nbsp;
-
-			<span class="media-link">Read More &nbsp;<i class="fa fa-angle-right"></i></span></p>
-		</div>
-	</a>
-</article>
-		
-
-		<hr />
-
-		<h3>Side Nav</h3>
-		
+		<h3 class="example-heading">Side Nav</h3>
+		<div class="example">
+			
 
 
 
@@ -681,21 +748,23 @@
 
     </ul>
 
-
-		<h3>Tile Button</h3>
-
-		<a class="tile-button" href="#">.tile-button</a>
-
-		<h3>Media Tile</h3>
-
-		<div class="media-tile">
-			<h3><i class="fa fa-rotate-right"></i>&nbsp; Media Tile</h3>
-			<p class="media-tile-body">Subscribe to our newsletter to stay up to date with etc.<br />
-			 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br />
-			 Aenean commodo ligula eget dolor.</p>
-			<a class="media-tile-link text-right" href="#">Join <i class="fa fa-angle-right"></i></a>
 		</div>
 
+		<h3 class="example-heading">Tile Button</h3>
+		<div class="example">
+			<a class="tile-button" href="#">.tile-button</a>
+		</div>
+
+		<h3 class="example-heading">Media Tile</h3>
+		<div class="example">
+			<div class="media-tile">
+				<h3 class="example-heading"><i class="fa fa-rotate-right"></i>&nbsp; Media Tile</h3>
+				<p class="media-tile-body">Subscribe to our newsletter to stay up to date with etc.<br />
+				 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br />
+				 Aenean commodo ligula eget dolor.</p>
+				<a class="media-tile-link text-right" href="#">Join <i class="fa fa-angle-right"></i></a>
+			</div>
+		</div>
 
 	</div>
 </div>
