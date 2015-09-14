@@ -1,14 +1,29 @@
 # GLOBAL SITE SETTINGS
 
-# General
-seo_title:
-title:
-short_title: hocw
-company:
-description: ""
 cname: hocw.yourwebvisual.com
 
+# General
+seo_title:
+title: "Hicks Oakley Chessell Williams Lawyers & Notary"
+short_title: hocw
+company: "Hicks Oakley Chessell Williams Lawyers & Notary"
+description: ""
+email: enquiries@hocw.com.au
+
 author_site: http://www.muchmedia.com.au
+
+offices:
+  - title: Melbourne
+    address: "Level 13<br> 379 Collins Street<br> Melbourne Victoria 3000"
+    phone: 03 9629 7411
+    fax: 03 9629 7422
+    DX: "31331 Mid-town <br>PO Box 446, Flinders Lane<br> Melbourne VIC 8009"
+
+  - title: Mount Waverley
+    address: "Level 13<br> 379 Collins Street<br> Melbourne Victoria 3000"
+    phone: 03 9550 4600
+    fax: 03 9629 7422
+    DX: "31331 Mid-town <br>PO Box 446, Flinders Lane<br> Melbourne VIC 8009"
 
 # Contact Info
 email: test@email.com

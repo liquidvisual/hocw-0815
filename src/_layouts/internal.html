@@ -2,13 +2,45 @@
 layout: master
 ---
 
+<!-- HERO -->
 <div class="hero-internal">
 
-	<!-- HEADER -->
-	<header data-global-header class="global-header">
+	<!-- GLOBAL HEADER -->
+	<header class="global-header" data-global-header>
 	    {% include header.html %}
 	</header>
 
-</div>
+</div> <!-- .hero-internal -->
 
-{{ content }}
+{% if page.breadcrumbs %}
+<!-- BREADCRUMBS -->
+<nav class="breadcrumbs-bar">
+    <div class="row outer-row">
+        <div class="columns">
+            {% include snippets/breadcrumbs.html %}
+        </div>
+    </div>
+</nav>
+{% endif %}
+
+<!-- STAGE -->
+<div class="stage section">
+
+	<!-- HEADER -->
+	<header class="header">
+		<div class="row outer-row">
+			<div class="columns">
+				<h1>
+					{% if page.title_override %}
+				    	{{ page.title_override }}
+				 	{% else %}
+				 		{{ page.title }}
+					{% endif %}
+				</h1>
+			</div>
+		</div>
+	</header>
+
+	{{ content }}
+
+</div> <!-- .stage -->

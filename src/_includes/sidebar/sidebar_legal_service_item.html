@@ -1,0 +1,30 @@
+{% include side_nav.html %}
+
+<div class="media-tile tertiary-bg-color">
+	<h3><i class="fa fa-files-o"></i>&nbsp; Family Law Resources</h3>
+	<ul class="no-bullet side-list">
+		<li><a href="#">Filename goes here <i class="fa fa-angle-right"></i></a></li>
+		<li><a href="#">Filename goes here <i class="fa fa-angle-right"></i></a></li>
+		<li><a href="#">Lorem ipsum dolor sit amet <i class="fa fa-angle-right"></i></a></li>
+	</ul>
+</div>
+
+<div class="media-tile secondary-bg-color">
+	<h3><i class="fa fa-users"></i>&nbsp; Family Law - Key Staff Members</h3>
+	<ul class="small-block-grid-2 xlarge-block-grid-4 text-center-medium">
+		<li><a href="#"><img width="74" src="/img/ui/no-face.png"></a>Name Goes Here</li>
+		<li><a href="#"><img width="74" src="/img/ui/no-face.png"></a> Longer Name Goes Here</li>
+		<li><a href="#"><img width="74" src="/img/ui/no-face.png"></a> Name Here</li>
+		<li><a href="#"><img width="74" src="/img/ui/no-face.png"></a> Name Here</li>
+	</ul>
+</div>
+
+{% include contact_box.html %}
+
+<div class="media-tile">
+	<h3><i class="fa fa-quote-left"></i>&nbsp; Testimonials</h3>
+	{% for i in (1..2)  %}
+		<p class="media-tile-body">Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar.</p>
+		<p><strong>Name Here, Suburb</strong></p>
+	{% endfor %}
+</div>

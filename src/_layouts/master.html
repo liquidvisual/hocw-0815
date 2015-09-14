@@ -11,7 +11,7 @@
     <title>{{ page.title }}</title>
 
     <!-- CDN -->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Permanent+Marker|Montserrat:400,700">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="http://allfont.net/allfont.css?fonts=montserrat-light">
 
     <!-- Fav Icon -->
@@ -24,10 +24,9 @@
 
     <!-- Priority Scripts -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
-    <!-- // <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
 </head>
 <body>
-    <div class="lv-super dev-mode-enabled">
+    <div class="lv-super dev-mode-enabledX">
         <div class="lv-page">
 
             <!-- MOBILE HEADER (DUPLICATE FOR MMENU) -->
@@ -40,8 +39,8 @@
                 <div class="row outer-row">
                     <div class="columns">
                         <ul>
-                            <!-- Homepage conditional -->
-                            {% if page.url == "/" %}
+                            <!-- Homepage Conditional -->
+                            {% if page.url != "/" %}
                                 <li class="left show-for-xlarge-up">
                                     <form class="search-form">
                                         <input type="text" placeholder="Search">
@@ -49,9 +48,10 @@
                                 </li>
                             {% endif %}
 
-                            <li class="top-search-bar-button"><a data-top-search-bar-button href="#"><i class="fa fa-phone"></i>&nbsp; Call us today</a></li>
-                            <li><b>Melbourne</b> <a href="#">03 9629 7411</a></li>
-                            <li><b>Mount Waverley</b> <a href="#">03 9550 4600</a></li>
+                            <li class="top-search-bar-button" data-top-search-bar-button><a href="#"><i class="fa fa-phone"></i>&nbsp; Call us today</a></li>
+                            {% for office in site.data.settings.offices | limit: 2 %}
+                                <li><b>{{ office.title }}</b> <a href="mailto:{{ office.phone }}">{{ office.phone }}</a></li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
@@ -72,6 +72,13 @@
         {% include navigation.html %}
     </nav>
 
+    <!-- MODALS -->
+    {% include modals.html %}
+
+    <div class="lv-alert success">
+        <p>Website <b>97%</b> complete</p>
+    </div>
+
     <!-- **** JAVASCRIPT **** -->
 
     <!-- build:js(src) /assets/scripts/minified.js -->
@@ -83,8 +90,13 @@
     <script src="/_bower_components/fastclick/lib/fastclick.js"></script>
     <script src="/_bower_components/foundation/js/foundation/foundation.js"></script>
     <script src="/_bower_components/foundation/js/foundation/foundation.abide.js"></script>
+    <script src="/_bower_components/foundation/js/foundation/foundation.accordion.js"></script>
+    <script src="/_bower_components/foundation/js/foundation/foundation.equalizer.js"></script>
+    <script src="/_bower_components/foundation/js/foundation/foundation.reveal.js"></script>
     <script src="/scripts/main.js"></script>
+    <script src="/scripts/expander.js"></script>
     <script src="/scripts/scrolling.js"></script>
+    <script src="/scripts/equalizer.js"></script>
     <!-- endbuild -->
 
     {% if site.mode != 'build' %}
@@ -94,7 +106,7 @@
     {% comment %}
     <!--
         ~~~ DEV REFERENCE ONLY ~~~
-            <script src="/scripts/responsive-helper.js"></script>
+
         ** FOUNDATION 5 **
         <script src="/_bower_components/foundation/js/foundation/foundation.js"></script>
         <script src="/_bower_components/foundation/js/foundation/foundation.abide.js"></script>
@@ -120,14 +132,14 @@
         <script src="/_bower_components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
         <script src="/_bower_components/slick.js/slick/slick.js"></script>
         <script src="/_bower_components/WOW/dist/wow.min.js"></script>
+        <script src="/scripts/responsive-helper.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     -->
     {% endcomment %}
 
     <script>
         $(document).foundation();
     </script>
-
-    <!-- Google Analytics -->
 
     <!-- No Javascript Warning -->
     <noscript>

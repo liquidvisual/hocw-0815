@@ -1,6 +1,6 @@
 {% comment %}
 <!--
-    Updated: 31.05.15
+    Updated: 26.08.15
 
     - Notes -
 
@@ -11,9 +11,11 @@
     When 'top_level_id' is passed, data is pulled from requested node in /data/sitemap.yml creating nav list.
     Optional: 'exclude_top_level' can be passed through the include, skipping the top level of the side nav.
 
-    Top Level: accesses the node in the YAML.
-    Second level: opens up the list item
-    Third Level: makes the child active
+    YAML Vars:
+
+    side_nav_top_level_id: accesses the node in the YAML.
+    side_nav_second_level_id: opens up the list item
+    side_nav_third_level_id: makes the child active
 
     Basic Output:
 

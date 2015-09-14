@@ -19,7 +19,6 @@
 {% assign sitemap = site.data.sitemap %}
 {% assign url_paths = page.url | downcase | split: '/' %}
 
-
 <ul>
 	{% comment %} Important: leave 'Home' out of the loop {% endcomment %}
 	<li class="{% if page.url == "/" %} active {% endif %}"><a href="/">Home</a></li>

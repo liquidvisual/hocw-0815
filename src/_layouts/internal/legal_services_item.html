@@ -1,3 +1,37 @@
 ---
 layout: internal
 ---
+
+<!-- CONTENT -->
+<div class="row outer-row">
+	<div class="large-10 columns">
+		<div class="pad-right-for-large">
+
+			<p><img width="100%" src="/img/content/placeholder-full.jpg" alt="Placeholder Image"></p>
+
+			<p class="image-right">
+				<img width="400" src="/img/content/placeholder-full.jpg" alt="...">
+			</p>
+
+			{{ content }}
+
+			<br>
+
+			<!-- NEWS FEED -->
+			<h3>Latest blog &amp; news updates</h3>
+			<hr>
+			{% include news_feed.html %}
+			<hr>
+			<p class="text-right"><a href="#">More Blog &amp; News &nbsp;<i class="fa fa-angle-right"></i></a></p>
+
+		</div>
+	</div>
+	<div class="large-6 columns">
+
+		<!-- SIDEBAR -->
+		<aside class="sidebar">
+			{% include sidebar/sidebar_legal_service_item.html %}
+		</aside>
+
+	</div>
+</div>

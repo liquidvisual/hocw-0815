@@ -24,3 +24,89 @@
 		float: right !important;
 	}
 }
+
+.lead {
+	color: #3D4144;
+}
+
+//-----------------------------------------------------------------
+// Spacer
+// Used in sidebar atm
+//-----------------------------------------------------------------
+
+.spacer {
+	height: rem-calc(10);
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+
+.profile-box {
+	position: relative;
+
+	h3 a {
+		color: $header-font-color;
+	}
+
+	.arrow-icon {
+		@include transition();
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		font-size: rem-calc(30);
+		line-height: 1;
+	}
+
+	&:hover .arrow-icon {
+		color: $primary-color;
+	}
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+
+.bold-panel * {
+	font-family: $font-family-sans-serif; // Montserrat (Normal)
+}
+
+//-----------------------------------------------------------------
+// Feed Item - used as news listing on bottom of pages
+//-----------------------------------------------------------------
+
+.feed-item {
+	date {
+		display: block;
+		margin-bottom: rem-calc(5);
+	}
+}
+
+//-----------------------------------------------------------------
+// Media Info
+//-----------------------------------------------------------------
+
+.media-info {
+	background: $secondary-color;
+	padding: rem-calc(20 15);
+	color: white;
+	margin-bottom: rem-calc(30);
+
+	ul {
+		list-style: none;
+		margin: 0 0;
+
+		li {
+			margin-bottom: rem-calc(5);
+		}
+	}
+
+	a {
+		color: white;
+		font-weight: bold;
+
+		&:hover {
+			color: #eee;
+		}
+	}
+}

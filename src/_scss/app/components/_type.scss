@@ -17,16 +17,45 @@ a,
 	cursor: pointer;
 }
 
+//=========================================
+// Leading Paragraph - Used once in homepage
+//=========================================
+
 p.lead {
 	font-size: rem-calc(15);
+	font-family: $font-family-sans-serif; // Montserrat (Normal)
 }
 
-// .h1 { font-size: $h1-font-size; }
-// .h2 { font-size: $h2-font-size; }
-// .h3 { font-size: $h3-font-size; }
-// .h4 { font-size: $h4-font-size; }
-// .h5 { font-size: $h5-font-size; }
-// .h6 { font-size: $h6-font-size; }
+//=========================================
+// News Feed Item
+//=========================================
+
+.feed-item {
+	font-weight: bold; // will snag date
+	font-family: $font-family-sans-serif; // Montserrat (Normal)
+}
+
+//=========================================
+// Content Header
+// Get roughly 50 pixels space between content
+//=========================================
+
+.header h1 {
+	@media #{$medium-up} {
+	    margin-bottom: rem-calc(30);
+	}
+}
+
+//=========================================
+// Granularity
+//=========================================
+
+.h1 { font-size: $h1-font-size; }
+.h2 { font-size: $h2-font-size; }
+.h3 { font-size: $h3-font-size; }
+.h4 { font-size: $h4-font-size; }
+.h5 { font-size: $h5-font-size; }
+.h6 { font-size: $h6-font-size; }
 
 //=========================================
 //

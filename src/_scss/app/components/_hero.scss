@@ -15,11 +15,16 @@
 	position: relative;
 
 	@media #{$medium-up} {
-	    padding-top: rem-calc(90);
+	    padding: rem-calc(90 0 40 0); // no idea
 	    margin-bottom: rem-calc(40);
 	    background: url(../img/content/hero-1.jpg) no-repeat top center;
 	    background-size: cover;
 	}
+
+	@media #{$large-up} {
+	    padding-bottom: rem-calc(65);
+	}
+
 	@media #{$xlarge-up} {
 	    padding-top: rem-calc(80);
 	}

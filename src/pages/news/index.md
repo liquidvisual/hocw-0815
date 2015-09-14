@@ -1,5 +1,5 @@
 ---
 layout: internal/news
-title: News/Blog
+title: Blog/News
 permalink: /news/
 ---

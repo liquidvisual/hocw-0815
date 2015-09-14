@@ -79,13 +79,31 @@ body {
 }
 
 //-----------------------------------------------------------------
+// Granular control over grid Stage
+//-----------------------------------------------------------------
+
+.pad-left-for-large {
+    @media #{$large-up} {
+        padding-left: rem-calc(40);
+    }
+}
+
+.pad-right-for-large {
+    @media #{$large-up} {
+        padding-right: rem-calc(40);
+    }
+}
+
+//-----------------------------------------------------------------
 // Patch Block Grid
 //-----------------------------------------------------------------
 
 // Ensure images scale to block grid LIs */
-// ul[class*='block-grid'] li img {
-//  width: 100%;
-// }
+ul[class*='block-grid'] li {
+    @media #{$small-only} {
+        width: 100%;
+    }
+}
 
 //=========================================
 //

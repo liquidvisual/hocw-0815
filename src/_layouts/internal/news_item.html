@@ -1,3 +1,51 @@
 ---
 layout: internal
 ---
+
+{% assign item = site.data.articles[2] %}
+
+<!-- CONTENT -->
+<div class="row outer-row">
+	<div class="large-12 columns">
+		<div class="pad-right-for-large">
+
+			<!-- Media Article -->
+	        <article class="media-article">
+	            <div class="media-body">
+	                <h2>{{ item.title }}</h2>
+	                <date class="media-tagline">{{ item.date | date: "%A %d %b %Y" }}</date>
+	                <br><br>
+
+					<div class="clearfix">
+
+		                <p class="image-right">
+		                	<img src="http://placehold.it/500x300">
+		                </p>
+
+		                {{ item.body | markdownify }}
+
+					</div>
+
+	            </div>
+	        </article>
+
+			<br>
+
+			<!-- NEWS FEED -->
+			<h3>Recent blog updates &amp; news</h3>
+			<hr>
+			{% include news_feed.html %}
+			<hr>
+			<p class="text-right"><a href="#">More Blog &amp; News &nbsp;<i class="fa fa-angle-right"></i></a></p>
+
+		</div>
+	</div>
+	<div class="large-4 columns">
+
+		<!-- SIDEBAR -->
+		<aside class="sidebar">
+			{% include sidebar/sidebar_news.html %}
+		</aside>
+
+	</div>
+</div>

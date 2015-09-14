@@ -56,6 +56,7 @@
     list-style: none; // locked
     margin: 0; // locked
     font-size: rem-calc(15);
+    font-family: $font-family-sans-serif; // Montserrat (Normal)
     // text-transform: uppercase;
 }
 
@@ -93,7 +94,8 @@
 
     &:hover {
         background: none;
-        color: $primary-color;
+        // color: $primary-color;
+        color: darken($secondary-color, 10%);
     }
 }
 
@@ -107,10 +109,10 @@
     text-align: center;
     padding: rem-calc(10 15);
     // color: $body-font-color;
-    color: $secondary-color;
+    color: #3D464E; //$secondary-color;
 }
 
-.topbar a:active,
+//.topbar > ul > li > a:active,
 .topbar .active > a {
     // background: $secondary-color;
     // color: white;
@@ -126,25 +128,34 @@
 //=========================================
 
 .topbar .has-dropdown:hover > a {
-    background: #eee;
+    // background: #eee;
 }
 
 // Find better way
 .topbar .has-dropdown.active:hover > a {
-    background: $secondary-color;
+    // background: $secondary-color;
 }
 
 /* UX decision, dropdowns are fiddly on tablets */
-.no-touch .topbar .has-dropdown:hover > .dropdown {
-    opacity: 1;
-    height: auto;
-    overflow: visible;
+.topbar .has-dropdown:hover > .dropdown {
+    @media #{$medium-up} {
+        opacity: 1;
+        height: auto;
+        overflow: visible;
+    }
 }
 
-.no-touch .topbar .dropdown .has-dropdown:hover > .dropdown {
-    opacity: 1;
-    height: auto;
-    padding: rem-calc(16);
+.topbar .dropdown .has-dropdown:hover > .dropdown {
+    @media #{$medium-up} {
+        opacity: 1;
+        height: auto;
+        padding: rem-calc(16);
+    }
+}
+
+// Don't show when fixed
+.header-is-fixed .topbar .dropdown {
+    display: none;
 }
 
 .topbar .dropdown {
@@ -157,9 +168,9 @@
     // top: 100%;
     top: auto;
     left: auto;
-    width: rem-calc(220);
-    background: #eee;
-    margin: 0;
+    width: rem-calc(240);
+    background: lighten($secondary-color, 10%);
+    margin: 0 0 0 24px;
     border-radius: 0 0 $global-radius $global-radius;
 }
 
@@ -182,12 +193,13 @@
 }
 
 .topbar .dropdown a {
-    border-bottom: 1px solid darken(#eee, 8%);
+    // border-bottom: 1px solid darken(#eee, 8%);
     margin: 0;
     text-align: left;
     transition: none;
     font-size: rem-calc(13);
     border-radius: 0 0 $global-radius $global-radius;
+    color: white;
 }
 
 .topbar .dropdown li:last-child a {

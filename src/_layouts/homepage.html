@@ -2,6 +2,9 @@
 layout: master
 ---
 
+{% assign featured_legal_services = site.data.sitemap[3].children | where: "featured", true %}
+{% assign settings = site.data.settings %}
+
 <div class="hero-medium-up">
 
 	<div class="hero-small-only">
@@ -20,27 +23,23 @@ layout: master
 
 	</div> <!-- .hero-small-only -->
 
-	<!-- LEGAL SERVICES -->
 	<div class="row outer-row collapse-for-small">
-		<div class="large-8 xlarge-10 columns">
+		<div class="large-8 xlarge-10 columns" data-match-height>
 
 			<!-- Legal Services -->
 			<div class="legal-services">
 				<ul>
-					<li><a href="/legal-services/family-law/">Business Law <i class="fa fa-angle-right"></i></a></li>
-					<li><a href="/legal-services/family-law/">Commercial Litigation &amp; Dispute Resolution <i class="fa fa-angle-right"></i></a></li>
-					<li><a href="/legal-services/family-law/">Family Law <i class="fa fa-angle-right"></i></a></li>
-					<li><a href="/legal-services/family-law/">Wills &amp; Estates <i class="fa fa-angle-right"></i></a></li>
-					<li><a href="/legal-services/family-law/">Property &amp; Conveyancing <i class="fa fa-angle-right"></i></a></li>
-					<li><a href="/legal-services/family-law/">Notary <i class="fa fa-angle-right"></i></a></li>
+					{% for item in featured_legal_services where item.featured == true %}
+						<li><a href="{{ item.url }}">{{ item.title }} <i class="fa fa-angle-right"></i></a></li>
+					{% endfor %}
 				</ul>
 				<a class="read-more-button" href="/legal-services/">View our Full List of Legal Services &nbsp;<i class="fa fa-angle-right"></i></a>
 			</div> <!-- .legal-services -->
 
 		</div> <!-- .large-8 -->
-		<div class="large-8 xlarge-6 columns hide-for-medium-only">
+		<div class="large-8 xlarge-6 columns hide-for-medium-only bold-panel" data-match-height>
 
-			<!-- News Panel -->
+			<!-- News Panel Etc -->
 			{% include news_panel.html %}
 
 			<div class="hide-for-small-only">
@@ -51,49 +50,40 @@ layout: master
 	</div> <!-- .outer-row -->
 </div> <!-- .hero-medium-up -->
 
-<!-- News Panel (Duplicate) -->
+<!-- News Panel Etc (Duplicate) -->
 <div class="row outer-row show-for-medium-only">
-	<div class="columns">
+	<div class="columns bold-panel">
 		{% include news_panel.html %}
 		{% include search_form.html %}
 	</div>
 </div>
 
-
-
-
-<!-- </div> -->
-
-
 <!-- CTU Section -->
 <section class="section cta-section">
 	<div class="row outer-row">
-		<div class="large-7 xlarge-9 columns">
+		<div class="large-7 xxlarge-9 columns">
 
 			<div class="media">
 				<div class="media-left show-for-xlarge-up-table-cell">
 					<div class="media-object">
-						<!-- FIX THIS REMEMBER TO -->
-						<img style="padding-right: 10px;" src="/img/template/speech-bubble.svg" alt="Get in Touch">
+						<img src="/img/template/speech-bubble.svg" alt="Get in Touch">
 					</div>
 				</div>
 				<div class="media-body">
 					<h2>Get in Touch</h2>
-					<p>Contact us today to discuss your legal matter, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient. Email us at <a href="#">enquiries@hocw.com.au ></a></p>
+					<p>Contact us today to discuss your legal matter, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient. Email us at <a href="mailto:{{ settings.email }}">{{ settings.email }} ></a></p>
 				</div>
 			</div>
 
 		</div>
-		<div class="large-9 xlarge-6 columns">
+		<div class="large-9 xxlarge-6 columns">
 
-			<div class="row">
-				<div class="small-8 columns">
-					<a class="tile-button" href="#">Melbourne</a>
-				</div>
-				<div class="small-8 columns">
-					<a class="tile-button" href="#">Mount Waverly</a>
-				</div>
-			</div>
+			<!-- Offices Grid -->
+			<ul class="offices-grid">
+				{% for office in settings.offices | limit: 2 %}
+					<li><a class="tile-button" href="/contact/">{{ office.title }}</a></li>
+				{% endfor %}
+			</ul>
 
 		</div>
 	</div>

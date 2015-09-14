@@ -1,0 +1,14 @@
+<h3>Blog &amp; News Categories</h3>
+
+<ul class="no-bullet side-list">
+	{% for category in site.data.sitemap[3].children %}
+		<li><a href="/legal-services/family-law/">{{ category.title }}</a></li>
+	{% endfor %}
+</ul>
+
+<br>
+
+<div class="sidebar-box">
+	<h4>Archive</h4>
+	{% include snippets/accordion.html data=site.data.news_archive %}
+</div>

@@ -1,3 +1,32 @@
 ---
 layout: internal
 ---
+
+<!-- CONTENT -->
+<div class="row outer-row">
+	<div class="columns">
+
+		<ul class="medium-block-grid-2 xlarge-block-grid-4">
+			{% for item in (1..12) %}
+				<li>
+					<div class="profile-box">
+						<a href="/our-people/john-smith/">
+							<img width="100%" src="/img/ui/no-face.png">
+						</a>
+
+						<h3 class="media-button-header">
+							<a href="/our-people/john-smith/">Person's Name <br><small>Position</small></a>
+						</h3>
+
+						<p>
+							P: <a href="tel:09555555">(09) 555 555</a><br>
+							E: <a href="mailto:john.smith@email.com">john.smith@email.com</a>
+						</p>
+						<i class="arrow-icon fa fa-angle-right"></i>
+					</div>
+				</li>
+			{% endfor %}
+		</ul>
+
+	</div>
+</div>

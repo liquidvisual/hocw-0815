@@ -1,9 +1,9 @@
 ---
 layout: internal/news_item
-title: "What's the Deal with Airline Peanuts?"
-permalink: /news/whats-the-deal-with-airline-peanuts/
+title: Blog/News
+permalink: /news/news-item/
 type: news_item
-date: 04 October 2014
+date: 21 November 2014
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!

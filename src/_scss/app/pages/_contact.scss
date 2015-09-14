@@ -1,0 +1,38 @@
+/*
+    CONTACT.CSS
+
+    - Last updated: 10.09.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Contact
+//-----------------------------------------------------------------
+
+.contact-grid {
+	a {
+		color: white;
+		font-weight: bold;
+	}
+
+	.media-tile {
+		padding: rem-calc(30);
+	}
+
+	li:nth-child(2) .media-tile {
+		background: $tertiary-color;
+	}
+	li:nth-child(3) .media-tile {
+		background: $quaternary-color;
+
+		.button {
+			background: darken($quaternary-color, 10%);
+
+			&:hover {
+				background: darken($quaternary-color, 15%);
+			}
+		}
+	}
+}

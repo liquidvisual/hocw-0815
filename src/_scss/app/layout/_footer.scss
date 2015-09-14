@@ -13,8 +13,11 @@
 
 .global-footer-body {
 	background: $primary-color;
-
 	padding-bottom: rem-calc(30); // special case, override section
+
+	p, ul {
+		font-family: $font-family-sans-serif; // Montserrat Normal for all
+	}
 
 	@media #{$medium-up} {
 	    padding-bottom: rem-calc(50); // special case, override section

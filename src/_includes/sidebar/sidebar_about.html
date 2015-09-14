@@ -1,0 +1,16 @@
+{% include side_nav.html %}
+
+{% include contact_box.html %}
+
+<div class="spacer"></div>
+
+<h3>Our offices</h3>
+
+<p>We have offices in Melbourne and Mount Waverley, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Ccolm sociis natoque penatibus et magnis dis parturient. Email us at <a href="mailto:enquiries@hocw.com.au">enquiries@hocw.com.au ></a></p>
+
+<!-- Offices Grid -->
+<ul class="offices-grid">
+	{% for office in site.data.settings.offices | limit: 2 %}
+		<li><a class="tile-button" href="/contact/">{{ office.title }}</a></li>
+	{% endfor %}
+</ul>

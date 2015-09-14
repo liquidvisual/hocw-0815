@@ -1,4 +1,4 @@
-<div class="media-tile media-tile-news">
+<div class="media-tile news-panel">
 	<h3>Latest blog &amp; news updates</h3>
 
 	<ul class="medium-block-grid-3 large-block-grid-1">
@@ -9,7 +9,7 @@
 						<div class="media-body">
 							<date class="media-tagline">{{ item.date | date: "%d %B %Y" }}</date>
 
-							<!-- SERVER-SIDE TRUNCATION IS VERY IMPORTANT HERE (60 max) -->
+							<!-- SERVER-SIDE TRUNCATION (60 chars max) -->
 							<p>{{ item.body | strip_html | truncate: 60 }} &nbsp;
 
 							<span class="media-link"><i class="fa fa-angle-right"></i></span></p>
@@ -19,5 +19,5 @@
 			</li>
 		{% endfor %}
 	</ul>
-	<a class="media-tile-link text-right" href="#">More <i class="fa fa-angle-right"></i></a>
+	<a class="media-tile-link text-right" href="/news/">More <i class="fa fa-angle-right"></i></a>
 </div>

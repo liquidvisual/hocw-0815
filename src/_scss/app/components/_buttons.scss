@@ -1,7 +1,7 @@
 /*
     BUTTONS.CSS
 
-    - Last updated: 03.08.15
+    - Last updated: 01.09.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -10,30 +10,34 @@
 //-----------------------------------------------------------------
 // Buttons
 //-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Tile Button
+//-----------------------------------------------------------------
 
 .tile-button {
 	position: relative;
 	display: block;
-	padding: rem-calc(20);
+	padding: rem-calc(20 40 20 20);
 	background: $secondary-color;
 	color: white;
-	font-size: rem-calc(16);
+	// font-size: rem-calc(16);
 	font-weight: bold;
-	// height: rem-calc(76);
-	height: rem-calc(112);
+	height: rem-calc(80);
+	font-family: $font-family-sans-serif; // Montserrat (Normal)
 
-	@media #{$large-up} {
-	    // height: rem-calc(112);
+	@media #{$medium-up} {
+	    font-size: rem-calc(16);
+	    height: rem-calc(112);
 	}
 
 	&:hover {
-		background: darken($secondary-color, 10%);
+		background: darken($secondary-color, 20%);
 		color: white;
 	}
 
 	&:after {
 		position: absolute;
-		top: rem-calc(27);
+		top: rem-calc(30);
 		right: rem-calc(20);
 		content: "\f105";
 		font-family: "FontAwesome";
@@ -43,13 +47,89 @@
 	}
 }
 
+//-----------------------------------------------------------------
+// Media Button
+//-----------------------------------------------------------------
+
+.image-tile-button {
+	display: block;
+
+	img {
+		margin: 0;
+		padding: 0;
+		vertical-align: top;
+		line-height: 1;
+	}
+
+	&.primary-color .image-tile-button-header { background: $primary-color; }
+	&.secondary-color .image-tile-button-header { background: $secondary-color; }
+	&.tertiary-color .image-tile-button-header { background: $tertiary-color; }
+	&.quaternary-color .image-tile-button-header { background: $quaternary-color; }
+
+	.image-tile-button-header {
+		@include transition('padding');
+		color: white;
+		padding: rem-calc(15);
+		margin: 0;
+		font-size: rem-calc(16);
+		text-transform: uppercase;
+		line-height: 1.2;
+
+		@media #{$medium-up} {
+		    height: rem-calc(90);
+		}
+	}
+}
+
+.image-tile-button:hover .image-tile-button-header {
+	@media #{$large-up} {
+	    padding-top: rem-calc(20);
+	}
+}
+
+//-----------------------------------------------------------------
+// Grey Button
+//-----------------------------------------------------------------
+
+.grey-button {
+    position: relative;
+    display: block;
+    text-align: left;
+    padding: rem-calc(16 35 16 16);
+    background: $secondary-color;
+    color: white;
+    margin-bottom: rem-calc(8);
+
+    &:before,
+    &:after {
+        position: absolute;
+        left: rem-calc(15);
+        top: 50%;
+        margin-top: rem-calc(-18);
+        font-family: 'FontAwesome';
+        font-size: rem-calc(34);
+    }
+
+    &:after {
+        content: "\f105";
+        left: auto;
+        right: rem-calc(15);
+    }
+
+    &:hover {
+    	background: darken($secondary-color, 10%);
+    }
+}
+
+//-----------------------------------------------------------------
+// Arrow Button
+//-----------------------------------------------------------------
+
+
+
 //=========================================
 //
 //=========================================
-
-.tile-button-group li {
-	// padding-bottom: 0;
-}
 
 //-----------------------------------------------------------------
 //

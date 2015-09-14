@@ -17,14 +17,23 @@
 	margin-bottom: rem-calc(20);
 	color: white;
 
+	a {
+		color: white;
+	}
+
 	.media-tile-link {
 		display: block;
 		text-transform: uppercase;
 		color: white;
 		font-size: rem-calc(10);
+		font-family: $font-family-sans-serif; // Montserrat (Normal)
 
 		@media #{$medium-up} {
 		    font-size: rem-calc(12);
+		}
+
+		&:hover {
+			color: darken($primary-color, 10%);
 		}
 	}
 
@@ -38,45 +47,76 @@
 }
 
 //-----------------------------------------------------------------
-// Media Tile News - used in hero on homepage
+// BGs
 //-----------------------------------------------------------------
 
-.media-tile-news {
-	background: rgba(#2FB3FB, 0.9);
-	overflow: hidden;
+.tertiary-bg-color {
+	background: $tertiary-color;
+}
 
-	@media #{$small-only} {
-	    padding: rem-calc(25 20);
+.secondary-bg-color {
+	background: $secondary-color;
+}
+
+//-----------------------------------------------------------------
+// Media Tile Dark
+//-----------------------------------------------------------------
+
+.media-tile-dark {
+	background: #4A525A;
+
+	p i {
+		font-size: rem-calc(18);
 	}
 
-	@media #{$medium-up} {
-	    max-height: rem-calc(274);
+	p {
+		color: #ddd;
 	}
 
-	@media #{$medium-only} {
-	   margin-bottom: 0;
+	a {
+		color: #ddd;
 	}
 
-	li {
-		@media #{$small-only} {
-		    padding-bottom: 0;
+	.lv-expander {
+		background: #5D6770;
+		padding: rem-calc(20);
+		margin-bottom: rem-calc(15);
+
+		[data-expander-trigger] {
+			cursor: pointer;
 		}
-	}
 
-	.media-article {
-		date {
-			color: #93CCE8;
-			font-size: rem-calc(12);
-			text-transform: uppercase;
-			padding-bottom: 0;
+		input,
+		textarea {
+			border: 0;
+			background: #DDDDDD;
 		}
 
-		.media-link {
-			color: white;
+		textarea {
+			height: 143px;
 		}
 
-		p {
-			color: white;
+		.button {
+			background: #3B444B;
+			margin-bottom: 0;
+
+			&:hover {
+				background: darken(#3B444B, 10%);
+			}
+		}
+
+		.lv-expander-arrow {
+			float: right;
+			z-index: 1;
+
+			i {
+				font-size: rem-calc(30);
+				line-height: 0.6;
+			}
+		}
+
+		> p {
+			margin-bottom: 0;
 		}
 	}
 }

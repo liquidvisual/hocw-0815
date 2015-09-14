@@ -1,7 +1,7 @@
 /*
     HOMEPAGE.CSS
 
-    - Last updated: 21.08.15
+    - Last updated: 10.09.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -13,16 +13,10 @@
 
 .legal-services {
 	position: relative;
-
-	@media #{$medium-up} {
-	    margin-bottom: rem-calc(40);
-	}
-
-	@media #{$large-up} {
-	    margin-bottom: rem-calc(65);
-	}
+	height: 100%;
 
 	ul {
+		height: 100%;
 		background: rgba($primary-color, 0.9);
 		margin: 0;
 		list-style: none;
@@ -51,15 +45,22 @@
 				}
 
 				&:hover {
-					color: darken($primary-color, 10%);
+					// color: darken($primary-color, 10%);
+					// color: white;
+					background: #339AD0;
 				}
 			}
 		}
 	}
 
+	//=========================================
+	// Read More Button
+	//=========================================
+
 	.read-more-button {
 		display: block;
 		color: white;
+		font-family: $font-family-sans-serif; // Montserrat (Normal)
 		font-size: rem-calc(12);
 		text-transform: uppercase;
 
@@ -70,10 +71,11 @@
 		    font-size: rem-calc(10);
 		}
 
-		@media #{$xlarge-up} {
+		@media #{$large-up} {
 		    position: absolute;
 		    bottom: rem-calc(10);
 		    right: rem-calc(30);
+		    background: none;
 		}
 
 		&:hover {
@@ -83,10 +85,85 @@
 }
 
 //-----------------------------------------------------------------
-//
+// CTA Section
 //-----------------------------------------------------------------
 
+.cta-section {
+	padding: rem-calc(25 0 40 0);
 
+	p, ul {
+		font-family: $font-family-sans-serif; // Montserrat (Normal)
+	}
 
+	img {
+		padding-right: rem-calc(10);
+	}
 
+	h2, h3 {
+		color: #AEB1B3;
+	}
+}
+
+//-----------------------------------------------------------------
+// Offices Grid (Smaller gutter to align with homepage)
+//-----------------------------------------------------------------
+
+.offices-grid {
+	@include block-grid($per-row: 2, $spacing: rem-calc(20), $base-style: true);
+}
+
+//-----------------------------------------------------------------
+// Media Tile News - used in hero on homepage
+//-----------------------------------------------------------------
+
+.news-panel {
+	background: rgba(#2FB3FB, 0.9);
+	overflow: hidden;
+
+	@media #{$small-only} {
+	    padding: rem-calc(25 20);
+	}
+
+	@media #{$large-up} {
+		height: calc(100% - 90px - 20px);
+	}
+
+	@media #{$medium-only} {
+	   margin-bottom: 0;
+	}
+
+	li {
+		padding-bottom: 0;
+	}
+
+	.media-article {
+		date {
+			color: #93CCE8;
+			font-size: rem-calc(12);
+			text-transform: uppercase;
+			padding-bottom: 0;
+		}
+
+		.media-link {
+			color: white;
+		}
+
+		p {
+			color: white;
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+// Panel Search
+//-----------------------------------------------------------------
+
+.panel-search {
+	height: rem-calc(90);
+	background: rgba(#0287CD, 0.91);
+
+	input {
+		height: calc(100% - 15px);
+	}
+}
 

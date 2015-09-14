@@ -2,12 +2,30 @@
 layout: internal
 ---
 
-<section class="section">
-	<div class="row outer-row">
-		<div class="large-7 columns">
-			<h1>{{ page.title }}</h1>
+<!-- CONTENT -->
+<div class="row outer-row">
+	<div class="large-10 columns">
+		<div class="pad-right-for-large">
 
 			{{ content }}
+
+			<br>
+
+			<!-- NEWS FEED -->
+			<h3>Latest blog &amp; news updates</h3>
+			<hr>
+			{% include news_feed.html %}
+			<hr>
+			<p class="text-right"><a href="#">More Blog &amp; News <i class="fa fa-angle-right"></i></a></p>
+
 		</div>
 	</div>
-</section>
+	<div class="large-6 columns">
+
+		<!-- SIDEBAR -->
+		<aside class="sidebar">
+			{% include sidebar/sidebar_about.html %}
+		</aside>
+
+	</div>
+</div>

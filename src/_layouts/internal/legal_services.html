@@ -1,3 +1,30 @@
 ---
 layout: internal
 ---
+
+{% assign legal_services = site.data.sitemap[3].children %}
+
+<!-- CONTENT -->
+<div class="row outer-row">
+	<div class="xlarge-4 columns">
+
+		<div class="pad-right-for-large">
+			{{ content }}
+		</div>
+
+	</div>
+	<div class="xlarge-12 columns">
+
+		<ul class="medium-block-grid-2 large-block-grid-3 xxlarge-block-grid-4">
+			{% for item in legal_services %}
+				<li>
+					<a class="image-tile-button {{ item.bg_color }}" href="/legal-services/family-law/">
+						<img width="100%" src="http://placehold.it/240x135">
+						<h3 class="image-tile-button-header">{{ item.title }} <i class="fa fa-angle-right"></i></h3>
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+
+	</div>
+</div>

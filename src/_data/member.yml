@@ -1,0 +1,19 @@
+- title: adolfo villafiorita
+  layout: internal/about
+  permalink: /people/adolfo/
+  side_nav_top_level_id: 1
+  children:
+    - title: charlie horse
+      layout: internal/about
+      permalink: /people/charlie/
+      side_nav_top_level_id: 2
+
+- title: pietro molini
+  layout: internal/about
+  permalink: /people/pietro/
+  side_nav_top_level_id: 1
+
+- title: aaron ciaghi
+  layout: internal/about
+  permalink: /people/aaron/
+  side_nav_top_level_id: 1
