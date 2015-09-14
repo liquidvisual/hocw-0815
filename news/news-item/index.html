@@ -309,7 +309,7 @@
                                 </li>
                             
 
-                            <li class="top-search-bar-button"><a data-top-search-bar-button href="#"><i class="fa fa-phone"></i>&nbsp; Call us today</a></li>
+                            <li class="top-search-bar-button" data-top-search-bar-button><a href="#"><i class="fa fa-phone"></i>&nbsp; Call us today</a></li>
                             
                                 <li><b>Melbourne</b> <a href="mailto:03 9629 7411">03 9629 7411</a></li>
                             
@@ -806,7 +806,7 @@
 				<p class="media-tile-body">Subscribe to our newsletter to stay up to date with etc.<br>
 				 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br>
 				 Aenean commodo ligula eget dolor.</p>
-				<a class="media-tile-link text-right" data-reveal-id="client-login-modal" href="#">Join <i class="fa fa-angle-right"></i></a>
+				<a class="media-tile-link text-right" data-reveal-id="join-newsletter-modal" href="#">Join <i class="fa fa-angle-right"></i></a>
 			</div>
 
 		</div>
@@ -1104,35 +1104,40 @@
     
 
 
-<!-- CLIENT LOGIN MODAL -->
-
-<div id="client-login-modal" class="reveal-modal" data-reveal aria-labelledby="client-login-modal-title" aria-hidden="true" role="dialog">
+<!-- NEWSLETTER MODAL -->
+<div id="join-newsletter-modal" class="reveal-modal" data-reveal aria-labelledby="join-newsletter-modal-modal-title" aria-hidden="true" role="dialog">
     <div class="row">
         <div class="columns">
-            <h2 id="client-login-modal-title">Client Login</h2>
-
+            <h2 id="join-newsletter-modal-title">Join Our Newsletter</h2>
             <section class="modal-body">
                 <div class="row">
                     <div class="medium-10 large-10 columns">
-                        <form data-abide novalidate method="post" action="#">
-                            <!-- Username -->
+                        <form data-abide  novalidate action="..." method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+                            <!-- Name -->
                             <div class="row">
-                                <div class="medium-5 columns">
+                                <div class="medium-7 columns">
                                     <label>
-                                        <input name="username" type="text" placeholder="USER NAME / EMAIL" required>
+                                        <input type="text" value="" name="FNAME" class="" placeholder="NAME" id="mce-FNAME" required>
                                     </label>
-                                    <small class="error">Your username is required.</small>
+                                    <small class="error">Your name is required.</small>
                                 </div>
+
                                 <!-- Password -->
-                                <div class="medium-5 columns">
+                                <div class="medium-7 columns">
                                     <label>
-                                        <input name="password" type="password" placeholder="PASSWORD" required>
+                                        <input type="email" value="" name="EMAIL" placeholder="EMAIL" id="mce-EMAIL" required>
                                     </label>
-                                    <small class="error">Your password is required.</small>
+                                    <small class="error">Your email is required.</small>
                                 </div>
+
                                 <!-- Submit -->
                                 <div class="medium-2 columns">
-                                    <button type="submit" class="button">Log In</button>
+                                    <button type="submit" name="subscribe" class="button">Join</button>
+                                </div>
+                                <div id="mce-responses" class="clear">
+                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                    <div class="response" id="mce-success-response" style="display:none"></div>
                                 </div>
                             </div>
                         </form>
@@ -1140,58 +1145,13 @@
                 </div> <!-- .row -->
             </section> <!-- .modal-body -->
 
-            <p><a href="#" data-reveal-id="client-login-password-modal"> Forgot password?</a></p>
         </div> <!-- .columns -->
     </div> <!-- .row -->
     <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div> <!-- reveal-modal -->
 
-<!-- CLIENT LOGIN - PASSWORD REMINDER MODAL -->
-
-<div id="client-login-password-modal" class="reveal-modal" data-reveal aria-labelledby="client-login-password-modal-title" aria-hidden="true" role="dialog">
-    <div class="row">
-        <div class="columns">
-            <h2 id="client-login-password-modal-title">Client Login<br class="show-for-small-only"> - Password Reminder</h2>
-
-            <section class="modal-body">
-
-                <!-- Success Prompt (Hidden by default - remove hide class to show) -->
-                <div id="modal-success-prompt" class="alert-box success hide animated fadeIn">Your password has been emailed to you</div>
-
-                <!-- Error Prompt (Hidden by default - remove hide class to show) -->
-                <div id="modal-error-prompt" class="alert-box error hide animated fadeIn">Your password has been emailed to you</div>
-
-                <div class="form-contents"> <!-- add 'hide' class on form submission callback -->
-                    <div class="row">
-                        <div class="medium-6 large-5 columns">
-                            <form data-abide novalidate method="post" action="#">
-                                <!-- Username -->
-                                <div class="row">
-                                    <div class="medium-10 columns">
-                                        <label>
-                                            <input name="username" type="text" placeholder="USER NAME / EMAIL" required>
-                                        </label>
-                                        <small class="error">Your username is required.</small>
-                                    </div>
-                                    <!-- Submit -->
-                                    <div class="medium-2 columns">
-                                        <button type="submit" class="button">Send</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div> <!-- .columns -->
-                    </div> <!-- .row -->
-                </div> <!-- .form-contents -->
-            </section> <!-- .modal-body -->
-
-            <p><a href="#" data-reveal-id="client-login-modal"><i class="fa fa-angle-left"></i>&nbsp; Back to Client Login</a></p>
-        </div> <!-- .columns -->
-    </div> <!-- .row -->
-    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-</div>
-
-    <div class="lv-alert">
-        <p>Website 95% done - Check back soon for status</p>
+    <div class="lv-alert success">
+        <p>Website <b>96%</b> complete</p>
     </div>
 
     <!-- **** JAVASCRIPT **** -->
