@@ -21,7 +21,7 @@ $nprogress-spinner-icon-border-width: 2px !default;
 #nprogress .bar {
 	background: $nprogress-bar-background-color;
 	position: fixed;
-	z-index: $nprogress-bar-z-index;
+	z-index: 9999999;
 	top: 0;
 	left: 0;
 	width: 100%;

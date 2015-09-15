@@ -91,6 +91,7 @@
 
         &:hover > a {
             color: white;
+            border-bottom: $secondary-color;
         }
     }
 }
