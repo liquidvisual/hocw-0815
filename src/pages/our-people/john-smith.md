@@ -3,6 +3,7 @@ layout: internal/our_people_item
 title: John Smith
 title_override: Our People
 permalink: /our-people/john-smith/
+breadcrumbs: true
 ---
 
 ### Expertise

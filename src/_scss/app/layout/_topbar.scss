@@ -54,7 +54,7 @@
 
 .topbar ul {
     list-style: none; // locked
-    margin: 0; // locked
+    margin: 0 -14px 0 0; // locked
     font-size: rem-calc(15);
     font-family: $font-family-sans-serif; // Montserrat (Normal)
     // text-transform: uppercase;
@@ -71,10 +71,27 @@
     // background: aqua;
 
     > li {
+        @include transition();
+        position: relative;
         // position: relative; // option - depending on dropdown
         display: table-cell;
         float: left; // prevents hairline weirdness
-        margin: rem-calc(0 2);
+        padding: rem-calc(10 14);
+        // margin: rem-calc(0 2);
+
+        -ms-transition-duration: .2s;
+        -moz-transition-duration: .2s;
+        -o-transition-duration: .2s;
+        -webkit-transition-duration: .2s;
+        transition-duration: .2s;
+
+        &:hover {
+            background: $secondary-color;
+        }
+
+        &:hover > a {
+            color: white;
+        }
     }
 }
 
@@ -88,15 +105,15 @@
     // line-height: rem-calc(40); // opinionated
     // padding: rem-calc(0 12); // opinionated
     padding: 0;
-    margin: rem-calc(0 0 0 24);
+    // margin: rem-calc(0 0 0 24);
     // text-transform: uppercase;
     // border-radius: $global-radius;
 
-    &:hover {
-        background: none;
-        // color: $primary-color;
-        color: darken($secondary-color, 10%);
-    }
+    // &:hover {
+    //     background: $secondary-color;
+    //     // color: $primary-color;
+    //     color: white;
+    // }
 }
 
 //-----------------------------------------------------------------
@@ -118,9 +135,9 @@
     // color: white;
     border-bottom: 2px solid #474B4F;
 
-    &:hover {
-        // background: $secondary-color !important;
-    }
+    // &:hover {
+    //     // background: $secondary-color !important;
+    // }
 }
 
 //=========================================
@@ -167,10 +184,10 @@
     overflow: hidden; // so hit areas aren't triggered
     // top: 100%;
     top: auto;
-    left: auto;
+    left: 0;
     width: rem-calc(240);
     background: lighten($secondary-color, 10%);
-    margin: 0 0 0 24px;
+    margin: 10px 0 0 0;
     border-radius: 0 0 $global-radius $global-radius;
 }
 
