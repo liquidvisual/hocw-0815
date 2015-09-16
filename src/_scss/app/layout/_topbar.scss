@@ -156,7 +156,7 @@
 
 /* UX decision, dropdowns are fiddly on tablets */
 .topbar .has-dropdown:hover > .dropdown {
-    @media #{$medium-up} {
+    @media #{$large-up} {
         opacity: 1;
         height: auto;
         overflow: visible;
@@ -172,9 +172,9 @@
 }
 
 // Don't show when fixed
-.header-is-fixed .topbar .dropdown {
-    display: none;
-}
+// .header-is-fixed .topbar .dropdown {
+//     display: none;
+// }
 
 .topbar .dropdown {
     @include transition('opacity');
