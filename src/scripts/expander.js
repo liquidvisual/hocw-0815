@@ -54,11 +54,13 @@ function expander($expander, $content, contentLabel) {
     // Prevent hash jumping
     // http://lea.verou.me/2011/05/change-url-hash-without-page-jump/
 
-    if (history.replaceState) {
-        history.replaceState(null, null, '#' + contentLabel);
-    } else {
-        window.location.hash = '#' + contentLabel;
-    }
+    // Uncomment for URL integration
+
+    // if (history.replaceState) {
+    //     history.replaceState(null, null, '#' + contentLabel);
+    // } else {
+    //     window.location.hash = '#' + contentLabel;
+    // }
 
     $content.toggleClass('hide animated fadeIn');
 
