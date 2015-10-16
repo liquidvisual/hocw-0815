@@ -27,7 +27,9 @@
         background: #40BAFA; //$primary-color;
 
         &:hover {
-            background: darken(#40BAFA, 10%);
+            @media #{$xlarge-up} {
+                background: darken(#40BAFA, 10%);
+            }
         }
 
         i {

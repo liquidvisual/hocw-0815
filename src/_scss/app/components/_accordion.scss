@@ -48,6 +48,15 @@
     padding: rem-calc(0 15);
     line-height: rem-calc(52);
     color: white !important; // gah foundation
+
+    // Foundation doesn't have control over hover at different media sizes
+    &:hover {
+        background: $secondary-color;
+
+        @media #{$xlarge-up} {
+            background: darken($secondary-color, 10%);
+        }
+    }
 }
 
 .lv-super .main-side-panel .accordion-navigation  {

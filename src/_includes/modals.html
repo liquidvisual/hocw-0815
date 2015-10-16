@@ -11,20 +11,29 @@ Trigger Example:
             <h2 id="join-newsletter-modal-title">Join Our Newsletter</h2>
             <section class="modal-body">
                 <div class="row">
-                    <div class="medium-10 large-10 columns">
+                    <div class="medium-10 large-13 columns">
                         <form data-abide  novalidate action="..." method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
-                            <!-- Name -->
                             <div class="row">
-                                <div class="medium-7 columns">
+
+                                <!-- First Name -->
+                                <div class="xlarge-4 columns">
                                     <label>
-                                        <input type="text" value="" name="FNAME" class="" placeholder="NAME" id="mce-FNAME" required>
+                                        <input type="text" value="" name="FNAME" class="" placeholder="FIRST NAME" id="mce-FNAME" required>
                                     </label>
-                                    <small class="error">Your name is required.</small>
+                                    <small class="error">Your first name is required.</small>
+                                </div>
+
+                                <!-- Last Name -->
+                                <div class="xlarge-4 columns">
+                                    <label>
+                                        <input type="text" value="" name="LNAME" class="" placeholder="LAST NAME" id="mce-LNAME" required>
+                                    </label>
+                                    <small class="error">Your last name is required.</small>
                                 </div>
 
                                 <!-- Password -->
-                                <div class="medium-7 columns">
+                                <div class="xlarge-6 columns">
                                     <label>
                                         <input type="email" value="" name="EMAIL" placeholder="EMAIL" id="mce-EMAIL" required>
                                     </label>

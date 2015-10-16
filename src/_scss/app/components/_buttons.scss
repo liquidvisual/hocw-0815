@@ -31,8 +31,13 @@
 	}
 
 	&:hover {
-		background: darken($secondary-color, 20%);
+		background: $secondary-color;
 		color: white;
+
+		@media #{$xlarge-up} {
+		    background: darken($secondary-color, 20%);
+		    color: white;
+		}
 	}
 
 	&:after {
@@ -69,7 +74,7 @@
 	.image-tile-button-header {
 		@include transition('padding');
 		color: white;
-		padding: rem-calc(15);
+		padding: rem-calc(15 15 15 15);
 		margin: 0;
 		font-size: rem-calc(16);
 		text-transform: uppercase;
@@ -82,7 +87,7 @@
 }
 
 .image-tile-button:hover .image-tile-button-header {
-	@media #{$large-up} {
+	@media #{$xlarge-up} {
 	    padding-top: rem-calc(20);
 	}
 }
@@ -117,7 +122,11 @@
     }
 
     &:hover {
-    	background: darken($secondary-color, 10%);
+    	background: $secondary-color;
+
+    	@media #{$xlarge-up} {
+    	    background: darken($secondary-color, 10%);
+    	}
     }
 }
 

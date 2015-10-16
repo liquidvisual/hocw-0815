@@ -39,7 +39,7 @@ $("[data-expander]").each(function(e){
 
     // Activate on click too
     $trigger.click(function(e){
-        // e.preventDefault();
+        e.preventDefault();
         expander($this, $content, contentLabel);
     });
 });
@@ -49,7 +49,7 @@ $("[data-expander]").each(function(e){
 //==================================================
 
 function expander($expander, $content, contentLabel) {
-    var arrow = $("i", $expander); // up down arrow
+    var arrow = $(".lv-expander-arrow i", $expander); // up down arrow
 
     // Prevent hash jumping
     // http://lea.verou.me/2011/05/change-url-hash-without-page-jump/

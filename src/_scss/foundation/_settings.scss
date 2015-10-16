@@ -216,7 +216,7 @@ $header-font-family: $font-family-sans-serif;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
 $header-font-color: #AEB1B3; //#484947; //$jet;
-// $header-line-height: 1.4;
+$header-line-height: 1.2;
 // $header-top-margin: .2rem;
 $header-bottom-margin: rem-calc(20);//rem-calc(10);
 // $header-text-rendering: optimizeLegibility;
@@ -343,7 +343,7 @@ $accordion-navigation-bg-color: $secondary-color; //$silver  ;
 // $accordion-navigation-font-family: $body-font-family;
 
 // $accordion-content-padding: $column-gutter/2;
-// $accordion-content-active-bg-color: $white;
+$accordion-content-active-bg-color: #eee; //$white;
 
 // 02. Alert Boxes
 // - - - - - - - - - - - - - - - - - - - - - - - - -

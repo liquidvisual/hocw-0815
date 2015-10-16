@@ -56,7 +56,7 @@
 	}
 
 	a:hover h2 {
-		@media #{$medium-up} {
+		@media #{$xlarge-up} {
 		    color: $primary-color;
 		}
 	}

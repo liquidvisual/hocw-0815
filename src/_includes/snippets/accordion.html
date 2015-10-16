@@ -19,7 +19,7 @@
 
 				<!-- If the data item has children, display a list. Else, show body text. -->
                 {% if item.children %}
-                	<ul class="no-bullet">
+                	<ul class="no-bullet side-list">
                 		{% for item in item.children  %}
                 	    <li><a href="{{ item.url }}">{{ item.title }} <i class="fa fa-angle-right"></i></a></li>
                 		{% endfor %}

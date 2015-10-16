@@ -7,6 +7,9 @@
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
+
+$global-radius: 0;
+
 //-----------------------------------------------------------------
 // Navigation
 //-----------------------------------------------------------------
@@ -76,7 +79,6 @@
         // position: relative; // option - depending on dropdown
         display: table-cell;
         float: left; // prevents hairline weirdness
-        padding: rem-calc(10 14);
         // margin: rem-calc(0 2);
 
         -ms-transition-duration: .2s;
@@ -89,7 +91,7 @@
             background: $secondary-color;
         }
 
-        &:hover > a {
+        &:hover > a .text {
             color: white;
             border-bottom: $secondary-color;
         }
@@ -103,18 +105,7 @@
 .topbar > ul > li > a,
 .topbar > ul > li > .anchor {
     display: block;
-    // line-height: rem-calc(40); // opinionated
-    // padding: rem-calc(0 12); // opinionated
-    padding: 0;
-    // margin: rem-calc(0 0 0 24);
-    // text-transform: uppercase;
-    // border-radius: $global-radius;
-
-    // &:hover {
-    //     background: $secondary-color;
-    //     // color: $primary-color;
-    //     color: white;
-    // }
+    padding: rem-calc(10 14);
 }
 
 //-----------------------------------------------------------------
@@ -126,19 +117,11 @@
     display: block;
     text-align: center;
     padding: rem-calc(10 15);
-    // color: $body-font-color;
     color: #3D464E; //$secondary-color;
 }
 
-//.topbar > ul > li > a:active,
-.topbar .active > a {
-    // background: $secondary-color;
-    // color: white;
+.topbar .active > a span {
     border-bottom: 2px solid #474B4F;
-
-    // &:hover {
-    //     // background: $secondary-color !important;
-    // }
 }
 
 //=========================================
@@ -187,8 +170,8 @@
     top: auto;
     left: 0;
     width: rem-calc(240);
-    background: lighten($secondary-color, 10%);
-    margin: 10px 0 0 0;
+    background: rgba(lighten($secondary-color, 10%), .92);
+    // margin: 10px 0 0 0;
     border-radius: 0 0 $global-radius $global-radius;
 }
 

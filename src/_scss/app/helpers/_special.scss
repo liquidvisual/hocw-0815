@@ -8,7 +8,7 @@
 // Variables
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
-// Themes
+//
 //-----------------------------------------------------------------
 
 .show-for-xlarge-up-table-cell {
@@ -28,6 +28,12 @@
 .lead {
 	color: #3D4144;
 }
+
+//-----------------------------------------------------------------
+// Modal spacing - check if impacts other forms, then apply to all
+//-----------------------------------------------------------------
+
+
 
 //-----------------------------------------------------------------
 // Spacer
@@ -130,3 +136,144 @@
 		display: block;
 	}
 }
+
+//-----------------------------------------------------------------
+// Jono Additions
+//-----------------------------------------------------------------
+
+.reduced-margin-bottom { margin-bottom: 0.65rem; }
+.media-info { background: #7E8994; } // Created case
+
+//=========================================
+// Created - move into new processes
+//=========================================
+
+.item-list a:hover h3 {
+	@include transition();
+}
+
+.item-list a:hover h3 {
+	@media #{$xlarge-up} {
+	    color: #777879;
+	}
+}
+
+//=========================================
+// Content Area
+//=========================================
+
+.content-area {
+	h1 {
+		font-size: rem-calc(33);
+		color: #5D6771;
+
+		small {
+			font-size: 85%;
+		}
+	}
+	strong {
+		color: #474748;
+	}
+	a strong {
+		color: inherit;
+	}
+	h4 {
+		color: #474748;
+		font-size: 15px;
+	}
+	li {
+		margin-left: 10px;
+	}
+	iframe {
+		max-width:100%;
+	}
+}
+
+//=========================================
+//
+//=========================================
+
+.grey-button:after { opacity: 0.3; }
+
+.resources-tile small {
+	opacity: 0.7;
+	font-size: 90%;
+}
+
+//=========================================
+// Header
+//=========================================
+
+.global-header-logo h1 { display: inline; } // does this work?
+.top-search-bar .outer-row { opacity: 0.9; } // does this work?
+
+//=========================================
+// Bold Panel - special
+//=========================================
+
+.bold-panel .news-panel h3 {
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	padding-bottom: 15px;
+}
+
+//=========================================
+// Blog Author - blog item
+//=========================================
+
+.blog-author img {
+	max-width: 200px;
+	margin-bottom: 20px;
+}
+
+//=========================================
+// Share Buttons
+//=========================================
+
+.share-buttons,
+.comments {
+	clear:both;
+	margin-top: 20px;
+}
+
+//=========================================
+// Contact Form
+//=========================================
+
+.contact-outer {
+	position: relative;
+}
+
+#contact-form-ajax-loading {
+	display: none;
+	z-index: 5;
+	background-color: rgba(43,48,52,0.8);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+
+// Icon
+#contact-form-ajax-loading .fa {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -40px;
+	margin-top: -50px;
+	font-size: 100px;
+	color: rgba(white, 0.7);
+}
+
+.alert {
+	padding: 20px;
+	background-color: #333;
+	color: #fff;
+	font-size: 80%;
+}
+
+.alert-success { background-color: #3fd377; }
+.alert-error { background-color: #e66060; }
+.contact-page .contact-page-full-width { width: 100% !important; }
+.contact-page .alert { font-size: 100%; }

@@ -46,7 +46,7 @@
 	input,
 	.button {
 		height: rem-calc(44);
-		@media #{$medium-up} {
+		@media #{$xlarge-up} {
 			margin-bottom: 0;
 		}
 	}

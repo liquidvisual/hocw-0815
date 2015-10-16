@@ -6,15 +6,16 @@ layout: internal
 <div class="row outer-row">
 	<div class="large-12 columns">
 
-		<div class="pad-right-for-large">
+		<div class="pad-right-for-large item-list">
 
 			<ul class="medium-block-grid-2">
 				{% for item in site.data.articles %}
 					<li>
-						<p><a class="" href="/news/news-item/"><img width="100%" src="http://placehold.it/300x200"></a></p>
+						<a class="" href="/news/news-item/">
 
-						<article class="media-article">
-							<a href="/news/news-item/">
+							<p><img width="100%" src="http://placehold.it/300x200"></p>
+
+							<article class="media-article">
 								<div class="media-body">
 									<h3>{{ item.title }}</h3>
 									<date class="media-tagline">{{ item.date }}</date>
@@ -24,8 +25,8 @@ layout: internal
 
 									<span class="media-link">Read More &nbsp;<i class="fa fa-angle-right"></i></span></p>
 								</div>
-							</a>
-						</article>
+							</article>
+						</a>
 					</li>
 				{% endfor %}
 			</ul>
