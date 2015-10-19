@@ -66,6 +66,10 @@
 		line-height: 1;
 	}
 
+	i {
+		display: inline;
+	}
+
 	&.primary-color .image-tile-button-header { background: $primary-color; }
 	&.secondary-color .image-tile-button-header { background: $secondary-color; }
 	&.tertiary-color .image-tile-button-header { background: $tertiary-color; }
