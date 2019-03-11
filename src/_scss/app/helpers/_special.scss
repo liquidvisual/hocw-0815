@@ -277,3 +277,31 @@
 .alert-error { background-color: #e66060; }
 .contact-page .contact-page-full-width { width: 100% !important; }
 .contact-page .alert { font-size: 100%; }
+
+//-----------------------------------------------------------------
+// HERO ADDITIONS - 11.03.19
+//-----------------------------------------------------------------
+
+.spec-hero-text {
+	margin-bottom: rem-calc(50);
+
+	h1 {
+		max-width: rem-calc(580);
+		font-size: rem-calc(34);
+		color: #3d4144;
+	}
+
+	p {
+		font-size: rem-calc(15);
+		font-weight: 500;
+		color: #3d4144;
+
+		@media #{$medium-up} {
+		    font-size: rem-calc(19);
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------

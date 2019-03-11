@@ -58,7 +58,8 @@ $global-radius: 0;
 .topbar ul {
     list-style: none; // locked
     margin: 0 -14px 0 0; // locked
-    font-size: rem-calc(15);
+    font-size: rem-calc(16);
+    font-weight: 700;
     font-family: $font-family-sans-serif; // Montserrat (Normal)
     // text-transform: uppercase;
 }
@@ -105,7 +106,7 @@ $global-radius: 0;
 .topbar > ul > li > a,
 .topbar > ul > li > .anchor {
     display: block;
-    padding: rem-calc(10 14);
+    padding: rem-calc(10 19);
 }
 
 //-----------------------------------------------------------------
@@ -120,8 +121,23 @@ $global-radius: 0;
     color: #3D464E; //$secondary-color;
 }
 
-.topbar .active > a span {
-    border-bottom: 2px solid #474B4F;
+.topbar .active > a .text {
+    position: relative;
+    // border-bottom: 2px solid #474B4F;
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #474B4F;
+    }
+}
+
+.topbar .active:hover .text:after {
+    opacity: 0;
 }
 
 //=========================================

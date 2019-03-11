@@ -1,106 +1,194 @@
 /*
     HOMEPAGE.CSS
 
-    - Last updated: 10.09.15
-    - hello@liquidvisual.com
+    - Last updated: 11.03.19, 10.09.15
 */
 //-----------------------------------------------------------------
-// Variables
+// VARIABLES
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
-// Legal Services Listing
+// HOMEPAGE FEATURE
 //-----------------------------------------------------------------
 
-.legal-services {
-	position: relative;
-	height: 100%;
+.homepage-feature {
+	display: flex;
+	flex-direction: column;
+
+	@media #{$medium-up} {
+	    margin-bottom: rem-calc(44);
+	}
+
+	@media #{$xlarge-up} {
+		flex-direction: row;
+	}
+}
+
+//-----------------------------------------------------------------
+// COLS
+//-----------------------------------------------------------------
+
+.homepage-feature .col-1,
+.homepage-feature .col-2 {
+	padding: rem-calc(30 20);
+
+	@media #{$xlarge-up} {
+		min-width: 50%;
+		padding: rem-calc(30 40);
+	}
+}
+
+//-----------------------------------------------------------------
+// COL-1 (BLUE)
+//-----------------------------------------------------------------
+
+.homepage-feature .col-1 {
+	background: rgba($primary-color, 0.9);
+}
+
+//-----------------------------------------------------------------
+// COL-2 (GRAY)
+//-----------------------------------------------------------------
+
+.homepage-feature .col-2 {
+	background: rgba($secondary-color, 0.9);
+
+	p {
+		margin-bottom: 0;
+		font-family: $font-family-sans-serif;
+		font-size: rem-calc(17);
+		line-height: 1.6;
+		color: white;
+	}
+}
+
+//-----------------------------------------------------------------
+// LEGAL SERVICES
+//-----------------------------------------------------------------
+
+.homepage-feature .legal-services {
 
 	ul {
-		height: 100%;
-		background: rgba($primary-color, 0.9);
-		margin: 0;
 		list-style: none;
-		font-size: rem-calc(21);
+		margin: 0;
+		font-size: rem-calc(20);
 
-		@media #{$xlarge-up} {
-		    font-size: rem-calc(31);
+		@media #{$medium-up} {
+		    font-size: rem-calc(26);
 		}
 
 		li {
-			border-bottom: 1px solid #56AAD5;
+			margin-bottom: rem-calc(20);
+			line-height: 1.3;
 
-			&:last-child {
-				border-bottom: 0;
+			@media #{$xxlarge-up} {
+			    margin-bottom: rem-calc(10);
 			}
 
 			a {
-				font-family: $font-family-serif;
-				display: block;
+				display: flex-inline;
+				align-items: center;
+				font-family: $font-family-sans-serif;
+				font-weight: 600;
 				color: white;
-				font-weight: normal;
-				padding: rem-calc(10 20);
 
-				@media #{$medium-up} {
-				    padding: rem-calc(10 30);
+				.fa-angle-right {
+					display: inline;
+					margin-left: rem-calc(10);
+					line-height: 0;
+
+					@media #{$medium-up} {
+						position: relative;
+						top: 3px;
+					    font-size: rem-calc(32);
+					}
 				}
 
 				&:hover {
-					// color: darken($primary-color, 10%);
-					// color: white;
-					background: #339AD0;
+					opacity: 0.8;
 				}
 			}
 		}
-	}
 
-	//=========================================
-	// Read More Button
-	//=========================================
-
-	.read-more-button {
-		display: block;
-		color: white;
-		font-family: $font-family-sans-serif; // Montserrat (Normal)
-		font-size: rem-calc(12);
-		text-transform: uppercase;
-
-		@media #{$small-only}, #{$medium-only}, #{$large-only} {
-		    background: rgba($primary-color, 0.9);
-		    padding: rem-calc(10 20 15 10);
-		    text-align: right;
-		    font-size: rem-calc(10);
-		}
-
-		@media #{$large-up} {
-		    position: absolute;
-		    bottom: rem-calc(10);
-		    right: rem-calc(30);
-		    background: none;
-		}
-
-		&:hover {
-			color: darken($primary-color, 20%);
+		li:last-child {
+			margin-bottom: 0;
 		}
 	}
 }
 
 //-----------------------------------------------------------------
-// CTA Section
+// CTA SECTION
 //-----------------------------------------------------------------
 
 .cta-section {
-	padding: rem-calc(25 0 40 0);
+	padding: rem-calc(0 0 40 0);
+	background: url(../img/content/contact-bg.jpg) no-repeat center center;
+	background-size: cover;
+
+	@media #{$medium-up} {
+		padding: rem-calc(75 0);
+	}
+
+	.xxlarge-10 {
+		@media #{$xxlarge-up} {
+			padding-right: rem-calc(50);
+		}
+	}
 
 	p, ul {
 		font-family: $font-family-sans-serif; // Montserrat (Normal)
 	}
 
-	img {
-		padding-right: rem-calc(10);
+	h2, h3 {
+		margin-bottom: rem-calc(25);
+		font-size: rem-calc(26);
+		font-weight: 700;
 	}
 
-	h2, h3 {
-		color: #AEB1B3;
+	//===========================================
+	// CONTACT HEADING
+	//===========================================
+
+	.contact-heading {
+		display: flex;
+		align-items: flex-start;
+		color: white;
+		margin-bottom: rem-calc(26);
+
+		h3 {
+			color: white;
+			margin-bottom: rem-calc(10);
+		}
+
+		p {
+			font-size: rem-calc(18);
+			margin-bottom: 0;
+		}
+
+		.fa-comments-o {
+			display: flex;
+			margin-right: rem-calc(18);
+			font-size: rem-calc(50);
+
+			@media #{$medium-up} {
+				font-size: rem-calc(70);
+			}
+		}
+	}
+
+	//===========================================
+	// TILE BUTTON
+	//===========================================
+
+	.tile-button {
+		background-color: $primary-color;
+
+		@media #{$medium-up} {
+		    font-size: rem-calc(20);
+		}
+
+		&:hover {
+			background-color: darken($primary-color, 5%);
+		}
 	}
 }
 
@@ -116,29 +204,61 @@
 // Media Tile News - used in hero on homepage
 //-----------------------------------------------------------------
 
-.news-panel {
-	background: rgba(#2FB3FB, 0.9);
+.cta-section .news-panel {
+	position: relative;
+	background: rgba(#2c3034, 0.74);
 	overflow: hidden;
 
 	@media #{$small-only} {
-	    padding: rem-calc(25 20);
+		margin-bottom: rem-calc(30);
+		margin-left: -20px;
+	    width: calc(100% + 39px);
+	    padding: rem-calc(20);
 	}
 
-	@media #{$large-up} {
-		height: calc(100% - 90px - 20px);
+	@media #{$medium-up} {
+	    margin-bottom: rem-calc(40);
+	    padding: rem-calc(20);
 	}
 
-	@media #{$medium-only} {
-	   margin-bottom: 0;
+	@media #{$xlarge-up} {
+	    padding: rem-calc(30 40);
+	}
+
+	@media #{$xxlarge-up} {
+	    margin-bottom: 0;
 	}
 
 	li {
 		padding-bottom: 0;
 	}
 
+	// make clean 3 news items on mobile
+	li:nth-child(4) {
+		@media #{$small-only} {
+			display: none;
+		}
+	}
+
+	.media-tile-link {
+		@media #{$xxlarge-up} {
+			position: absolute;
+			top: 37px;
+			right: 24px;
+			font-size: rem-calc(13);
+		}
+	}
+
+	//---
+
 	.media-article {
+
+		@media #{$xxlarge-up} {
+		    padding-right: rem-calc(30);
+		}
+
 		date {
-			color: #93CCE8;
+			color: #808385;
 			font-size: rem-calc(12);
 			text-transform: uppercase;
 			padding-bottom: 0;
@@ -157,13 +277,3 @@
 //-----------------------------------------------------------------
 // Panel Search
 //-----------------------------------------------------------------
-
-.panel-search {
-	height: rem-calc(90);
-	background: rgba(#0287CD, 0.91);
-
-	input {
-		height: calc(100% - 15px);
-	}
-}
-

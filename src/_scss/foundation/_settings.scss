@@ -92,7 +92,7 @@ $font-family-serif: "Montserrat Light", "Helvetica Neue", Helvetica, Roboto, Ari
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
-// $font-weight-normal: normal !default;
+$font-weight-normal: 400; //normal !default;
 // $font-weight-bold: bold !default;
 
 // We use these as default colors throughout
@@ -213,7 +213,7 @@ $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (m
 
 // We use these to control header font styles
 $header-font-family: $font-family-sans-serif;
-// $header-font-weight: $font-weight-normal;
+$header-font-weight: 600; //$font-weight-normal;
 // $header-font-style: normal;
 $header-font-color: #AEB1B3; //#484947; //$jet;
 $header-line-height: 1.2;

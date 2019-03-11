@@ -21,7 +21,8 @@ a,
 // Leading Paragraph - Used once in homepage
 //=========================================
 
-p.lead {
+p.lead,
+.lead p {
 	font-size: rem-calc(15);
 	font-family: $font-family-sans-serif; // Montserrat (Normal)
 }

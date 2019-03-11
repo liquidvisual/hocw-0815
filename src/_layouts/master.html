@@ -11,7 +11,7 @@
     <title>{{ page.title }}</title>
 
     <!-- CDN -->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,500,600,700">
     <link rel="stylesheet" href="http://allfont.net/allfont.css?fonts=montserrat-light">
 
     <!-- Fav Icon -->
@@ -39,15 +39,11 @@
                 <div class="row outer-row">
                     <div class="columns">
                         <ul>
-                            <!-- Homepage Conditional -->
-                            {% if page.url != "/" %}
-                                <li class="left show-for-xlarge-up">
-                                    <form class="search-form">
-                                        <input type="text" placeholder="Search">
-                                    </form>
-                                </li>
-                            {% endif %}
-
+                            <li class="left show-for-xlarge-up">
+                                <form class="search-form">
+                                    <input type="text" placeholder="Search">
+                                </form>
+                            </li>
                             <li class="top-search-bar-button" data-top-search-bar-button><a href="#"><i class="fa fa-phone"></i>&nbsp; Call us today</a></li>
                             {% for office in site.data.settings.offices | limit: 2 %}
                                 <li><b>{{ office.title }}</b> <a href="mailto:{{ office.phone }}">{{ office.phone }}</a></li>
@@ -74,10 +70,6 @@
 
     <!-- MODALS -->
     {% include modals.html %}
-
-    <!-- <div class="lv-alert success">
-        <p>Website <b>97%</b> complete</p>
-    </div> -->
 
     <!-- **** JAVASCRIPT **** -->
 
