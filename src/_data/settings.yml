@@ -29,9 +29,10 @@ offices:
 email: test@email.com
 
 # Social Networks
-facebook:
-linked_in:
-google_plus:
+facebook: https://www.facebook.com/hicksoakleychessellwilliams/
+linked_in: http://www.linkedin.com/company/hicks-oakley-chessell-williams-lawyers-&-notary
+twitter: https://twitter.com/hocwlawyers
+youtube: https://www.youtube.com/watch?v=o3qB2oCO3GI
 
 # Google Map
 google_map: ""

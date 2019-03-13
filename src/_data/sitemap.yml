@@ -11,20 +11,54 @@
       url: "#"
     - title: Testimonials
       url: "#"
-    - title: Another Page Example
-      url: "#"
 
 - title: Our People
   url: /our-people/
   include_children_in_nav: true
   children:
-    - title: John Smith
+    - title: Tony Oakley
       url: /our-people/john-smith/
-    - title: John Smith
+    - title: Matthew Hicks
+      url: /our-people/john-smith/mat
+    - title: Lachlan Vallance
       url: /our-people/john-smith/
-    - title: John Smith
+    - title: Sarah Lindsey
       url: /our-people/john-smith/
-    - title: John Smith
+    - title: Vincent Caruso
+      url: /our-people/john-smith/
+    - title: Petra Thomson
+      url: /our-people/john-smith/
+    - title: David Williams
+      url: /our-people/john-smith/
+    - title: Dianne Hodge
+      url: /our-people/john-smith/
+    - title: Simone Wunderlich
+      url: /our-people/john-smith/
+    - title: Hayley Hunter
+      url: /our-people/john-smith/
+    - title: Harish Nair
+      url: /our-people/john-smith/
+    - title: Lisa Yong
+      url: /our-people/john-smith/
+    - title: Kate Williams
+      url: /our-people/john-smith/
+    - title: Chimene Vaughan
+      url: /our-people/john-smith/
+    - title: Nicolle Ang
+      url: /our-people/john-smith/
+    - title: Diane Mutimer
+      url: /our-people/john-smith/
+    - title: Andrea Bolitho
+      url: /our-people/john-smith/
+    - title: Brittni Honan
+      url: /our-people/john-smith/
+    - title: Nicole Russell
+      url: /our-people/john-smith/
+    - title: Marie Mackenzie
+      url: /our-people/john-smith/
+    - title: Nicole Honan
+      url: /our-people/john-smith/
+    - title: Lorraine Hingert
       url: /our-people/john-smith/
 
 - title: Legal Services
@@ -36,30 +70,63 @@
       bg_color: primary-color
       featured: true
 
+    - title: Franchise
+      url: /legal-services/family-law/
+      bg_color: tertiary-color
+
     - title: Employment & Workplace Relations
       url: /legal-services/family-law/
       bg_color: tertiary-color
+
+    - title: Leasing - Commercial & Retail
+      url: /legal-services/family-law/
+      bg_color: tertiary-color
+
+    - title: Intellectual Property Law
+      url: /legal-services/family-law/
+      bg_color: tertiary-color
+
+    - title: Superannuation
+      url: /legal-services/family-law/
+      bg_color: secondary-color
 
     - title: Commercial Litigation & Dispute Resolution
       url: /legal-services/family-law/
       bg_color: primary-color
       featured: true
 
+    - title: Building & Construction
+      url: /legal-services/family-law/
+      bg_color: secondary-color
+
+    - title: Owners Corporate Law
+      url: /legal-services/family-law/
+      bg_color: secondary-color
+
+    - title: Domestic Building Disputes
+      url: /legal-services/family-law/
+      bg_color: secondary-color
+
+    - title: Insolvency
+      url: /legal-services/family-law/
+      bg_color: primary-color
+
     - title: Family Law
       url: /legal-services/family-law/
       bg_color: quaternary-color
       featured: true
 
-    - title: Domestic Building Disputes
+    - title: Property & Conveyancing
       url: /legal-services/family-law/
-      bg_color: tertiary-color
+      bg_color: primary-color
+      featured: true
 
     - title: Wills & Estates
       url: /legal-services/family-law/
       bg_color: secondary-color
       featured: true
 
-    - title: Property & Conveyancing
+    - title: Elder Law | Aged Care & Retirement
       url: /legal-services/family-law/
       bg_color: primary-color
       featured: true
@@ -69,22 +136,6 @@
       bg_color: tertiary-color
       featured: true
 
-    - title: Intellectual Property Law
-      url: /legal-services/family-law/
-      bg_color: primary-color
-
-    - title: Leasing - Commercial & Retail
-      url: /legal-services/family-law/
-      bg_color: tertiary-color
-
-    - title: Mortgage Law
-      url: /legal-services/family-law/
-      bg_color: quaternary-color
-
-    - title: Superannuation
-      url: /legal-services/family-law/
-      bg_color: secondary-color
-
 - title: Blog/News
   url: /news/
   include_children_in_nav: false
@@ -92,8 +143,14 @@
     - title: Article Heading
       url: /news/news-item/
 
-- title: Resources
+- title: FAQS/Resources
   url: /resources/
+  include_children_in_nav: true
+  children:
+    - title: FAQs
+      url: /resources/
+    - title: Resources
+      url: /resources/
 
 - title: Contact
   url: /contact/
