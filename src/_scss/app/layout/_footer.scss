@@ -102,10 +102,12 @@
 			@media #{$medium-up} {
 			    display: inline-block;
 			    margin-right: rem-calc(30);
+			    transition: color 100ms ease;
 			}
 
 			a:hover {
 				color: darken($primary-color, 20%);
+				// opacity: 0.8;
 			}
 		}
 	}

@@ -1,17 +1,16 @@
 /*
-    NAVIGATION.CSS
+    TOPBAR.CSS
 
-    - Last updated: 06.07.15
-    - hello@liquidvisual.com
+    - Last updated: 13.03.19, 06.07.15
 */
 //-----------------------------------------------------------------
-// Variables
+// VARIABLES
 //-----------------------------------------------------------------
 
 $global-radius: 0;
 
 //-----------------------------------------------------------------
-// Navigation
+// NAVIGATION
 //-----------------------------------------------------------------
 
 .global-navigation {
@@ -35,7 +34,7 @@ $global-radius: 0;
 // }
 
 //-----------------------------------------------------------------
-// Topbar
+// TOPBAR
 //-----------------------------------------------------------------
 
 .topbar {
@@ -52,78 +51,72 @@ $global-radius: 0;
 }
 
 //=========================================
-// General ULs
+// ULS
 //=========================================
 
 .topbar ul {
     list-style: none; // locked
     margin: 0 -14px 0 0; // locked
-    font-size: rem-calc(16);
-    font-weight: 700;
+    font-size: rem-calc(14);
+    font-weight: 600;
     font-family: $font-family-sans-serif; // Montserrat (Normal)
-    // text-transform: uppercase;
+
+    @media #{$xxlarge-up} {
+        font-size: rem-calc(16);
+    }
 }
 
 //=========================================
-// Visual UL
+// VISUAL UL
 //=========================================
 
 .topbar > ul {
     display: table;
-    // width: 100%; // option A
-    float: right; // option B
-    // background: aqua;
+    float: right;
 
     > li {
-        @include transition();
         position: relative;
-        // position: relative; // option - depending on dropdown
         display: table-cell;
         float: left; // prevents hairline weirdness
-        // margin: rem-calc(0 2);
-
-        -ms-transition-duration: .2s;
-        -moz-transition-duration: .2s;
-        -o-transition-duration: .2s;
-        -webkit-transition-duration: .2s;
-        transition-duration: .2s;
+        transition: background 100ms linear;
 
         &:hover {
-            background: $secondary-color;
+            background: rgba(black, 0.08); //$secondary-color;
         }
 
         &:hover > a .text {
-            color: white;
             border-bottom: $secondary-color;
         }
     }
 }
 
 //=========================================
-// Visual Anchors
+// TOP ANCHORS
 //=========================================
 
 .topbar > ul > li > a,
 .topbar > ul > li > .anchor {
     display: block;
-    padding: rem-calc(10 19);
+    padding: rem-calc(10 12);
+
+    @media #{$xxlarge-up} {
+        padding: rem-calc(10 19);
+    }
 }
 
 //-----------------------------------------------------------------
-// General Anchors
+// ALL ANCHORS
 //-----------------------------------------------------------------
 
 .topbar a {
-    @include transition('background-color');
     display: block;
     text-align: center;
     padding: rem-calc(10 15);
-    color: #3D464E; //$secondary-color;
+    color: #3D464E;
 }
 
 .topbar .active > a .text {
     position: relative;
-    // border-bottom: 2px solid #474B4F;
 
     &:after {
         content: "";
@@ -141,7 +134,7 @@ $global-radius: 0;
 }
 
 //=========================================
-// Nested Dropdowns
+// NESTED DROPDOWNS
 //=========================================
 
 .topbar .has-dropdown:hover > a {
@@ -176,19 +169,18 @@ $global-radius: 0;
 // }
 
 .topbar .dropdown {
-    @include transition('opacity');
     display: block;
     position: absolute;
     opacity: 0;
     height: 0; // so hit areas aren't triggered
     overflow: hidden; // so hit areas aren't triggered
-    // top: 100%;
     top: auto;
     left: 0;
-    width: rem-calc(240);
-    background: rgba(lighten($secondary-color, 10%), .92);
-    // margin: 10px 0 0 0;
+    // width: rem-calc(240);
+    width: rem-calc(280);
+    background: white;
     border-radius: 0 0 $global-radius $global-radius;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
 }
 
 .topbar > ul > li:last-child .dropdown {
@@ -207,26 +199,26 @@ $global-radius: 0;
     float: none;
     display: block;
     margin: 0;
+    border-bottom: 1px solid rgba(black, 0.1);
 }
 
 .topbar .dropdown a {
-    // border-bottom: 1px solid darken(#eee, 8%);
     margin: 0;
     text-align: left;
     transition: none;
     font-size: rem-calc(13);
+    font-weight: 500;
     border-radius: 0 0 $global-radius $global-radius;
-    color: white;
+    // color: white;
 }
 
+.topbar .dropdown li:last-child,
 .topbar .dropdown li:last-child a {
     border-bottom: 0;
-    // border-bottom: 1px solid #CCCCCC;
 }
 
 .topbar .dropdown a:hover {
-    background: $secondary-color; //#eee;
-    color: white;
+    background: rgba(black, 0.05);
 }
 
 //=========================================

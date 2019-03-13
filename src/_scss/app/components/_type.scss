@@ -1,24 +1,24 @@
 /*
     TYPE.CSS
 
-    - Last updated: 04.05.15
-    - hello@liquidvisual.com
+    - Last updated: 13.03.19, 04.05.15
 */
 //-----------------------------------------------------------------
-// Variables
+// VARIABLES
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
-// Type
+// TYPE
 //-----------------------------------------------------------------
 
 a,
 .anchor {
-	@include transition("color, background");
+	transition: color 150ms ease, background 150ms ease;
 	cursor: pointer;
 }
 
 //=========================================
-// Leading Paragraph - Used once in homepage
+// LEAD
+// Used once in homepage
 //=========================================
 
 p.lead,
@@ -28,7 +28,7 @@ p.lead,
 }
 
 //=========================================
-// News Feed Item
+// NEWS FEED ITEM
 //=========================================
 
 .feed-item {
@@ -37,7 +37,7 @@ p.lead,
 }
 
 //=========================================
-// Content Header
+// CONTENT HEADER
 // Get roughly 50 pixels space between content
 //=========================================
 
@@ -48,7 +48,7 @@ p.lead,
 }
 
 //=========================================
-// Granularity
+// GRANULARITY
 //=========================================
 
 .h1 { font-size: $h1-font-size - $h1-font-reduction; }

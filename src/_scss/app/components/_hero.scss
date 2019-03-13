@@ -1,24 +1,19 @@
 /*
     HERO.CSS
 
-    - Last updated: 21.08.15
-    - hello@liquidvisual.com
+    - Last updated: 13.03.19, 21.08.15
 */
 //-----------------------------------------------------------------
-// Variables
+// VARIABLES
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
-//
+// HOMEPAGE HERO
+// hero switches for mobile so image doesn't over extend
 //-----------------------------------------------------------------
 
 .hero-medium-up {
-	position: relative;
-
 	@media #{$medium-up} {
-	    padding: rem-calc(90 0 40 0); // no idea
-	    // margin-bottom: rem-calc(40);
-	    background: url(../img/content/hero-2.jpg) no-repeat top center;
-	    background-size: cover;
+	    padding: rem-calc(90 0 40 0);
 	}
 
 	@media #{$large-up} {
@@ -31,27 +26,27 @@
 }
 
 .hero-small-only {
-	position: relative;
-
 	@media #{$small-only} {
 		padding-top: rem-calc(75);
-	    background: url(../img/content/hero-2.jpg) no-repeat 30% top;
-	    background-size: cover;
+	}
+}
+
+.hero-small-only,
+.hero-small-only:after {
+	@media #{$medium-up} {
+	    background: none !important;
 	}
 }
 
 //-----------------------------------------------------------------
-//
+// HERO INTERNAL
 //-----------------------------------------------------------------
 
 .hero-internal {
-	position: relative;
-
-	background: url(../img/content/hero-1.jpg) no-repeat top center;
-	background-size: cover;
 	padding-top: rem-calc(75);
 	height: rem-calc(155);
 	margin-bottom: rem-calc(20);
+	background-position: top center !important;
 
 	@media #{$medium-up} {
 		height: rem-calc(190);
@@ -65,7 +60,6 @@
 		margin-bottom: rem-calc(42);
 	}
 }
-
 
 //=========================================
 //

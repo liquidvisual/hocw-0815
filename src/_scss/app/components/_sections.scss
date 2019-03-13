@@ -1,14 +1,13 @@
 /*
     SECTIONS.CSS
 
-    - Last updated: 10.09.15
-    - hello@liquidvisual.com
+    - Last updated: 13.03.19
 */
 //-----------------------------------------------------------------
-// Variables
+// VARIABLES
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
-// Sections
+// SECTION
 //-----------------------------------------------------------------
 
 .section {
@@ -16,6 +15,44 @@
 
 	@media #{$medium-up} {
 	    padding: rem-calc(65 0 (65-20) 0);
+	}
+}
+
+//-----------------------------------------------------------------
+// SECTION FEATURES
+//-----------------------------------------------------------------
+
+.section,
+.spec-section {
+
+	&.has-image-bg {
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	&.has-light-tint,
+	&.has-dark-tint {
+		position: relative;
+		z-index: 1;
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(white, 0.48);
+			pointer-events: none;
+			z-index: -1;
+		}
+	}
+
+	&.has-dark-tint {
+		&:after {
+			background: rgba(#363c41, 0.86);
+		}
 	}
 }
 

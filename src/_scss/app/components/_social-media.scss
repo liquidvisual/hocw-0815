@@ -48,11 +48,13 @@
 .global-footer .social-media {
 	@media #{$medium-up} {
 		position: absolute;
-		left: -96px;
+		top: rem-calc(100);
+		left: -163%;
 	}
 
 	@media #{$xlarge-up} {
-	    left: -140px;
+		top: 0;
+	    left: rem-calc(-239);
 	}
 }
 
