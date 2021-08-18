@@ -58,6 +58,14 @@
 		font-size: rem-calc(17);
 		line-height: 1.6;
 		color: white;
+
+		a {
+			color: white;
+
+			&:hover {
+				color: rgba(white, 0.8);
+			}
+		}
 	}
 }
 
